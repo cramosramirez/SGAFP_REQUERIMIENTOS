@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EEE6B7C-964F-4564-BB1C-42E3E404558D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.WebUC</RootNamespace>
+    <AssemblyName>SGAFP_WebUC</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_WebUC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_WebUC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SQLMembershipProvider_BL">
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SQLMembershipProvider_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="SGAFP.BL" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ddlACCION_CONTRATADA.vb" />
+    <Compile Include="ddlACCION_FORMATIVA_DETALLE.vb" />
+    <Compile Include="ddlACCION_FORMATIVA_REPROG.vb" />
+    <Compile Include="ddlACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="ddlAREA_FORMACION.Partial.vb" />
+    <Compile Include="ddlBase.vb" />
+    <Compile Include="ddlCENTRO_RESPONSABILIDAD.vb" />
+    <Compile Include="ddlCENTRO_RESPONSABILIDAD_UNIDAD.vb" />
+    <Compile Include="ddlCONTRATO_BOLPROS.vb" />
+    <Compile Include="ddlCONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="ddlDESEMBOLSO.vb" />
+    <Compile Include="ddlDESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="ddlDISCAPACIDAD.vb" />
+    <Compile Include="ddlDISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="ddlDISCA_POR_SOLICITUD.vb" />
+    <Compile Include="ddlEDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="ddlESTADO_CIVIL.vb" />
+    <Compile Include="ddlESTADO_INFORME_AF.vb" />
+    <Compile Include="ddlESTADO_REPROG.vb" />
+    <Compile Include="ddlFASE.vb" />
+    <Compile Include="ddlFASE_MUNICIPIOS.vb" />
+    <Compile Include="ddlFUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="ddlGRUPO_SOLICITUD.vb" />
+    <Compile Include="ddlMUNICIPIO_LIQUIDACION_DET.vb" />
+    <Compile Include="ddlPAIS.vb" />
+    <Compile Include="ddlPAQUETE_INFORME.vb" />
+    <Compile Include="ddlPAQUETE_INFORME_DET.vb" />
+    <Compile Include="ddlPARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="ddlPROGRAMA_FORMACION_TIPOPAGO.vb" />
+    <Compile Include="ddlPROVEEDOR_AF.Partial.vb" />
+    <Compile Include="ddlPROYECTO_FORMACION.vb" />
+    <Compile Include="ddlREFERENCIA.vb" />
+    <Compile Include="ddlREFERENTE.vb" />
+    <Compile Include="ddlSITIO_CAPACITACION.Partial.vb" />
+    <Compile Include="ddlSOLICITUD_CAPACITACION.vb" />
+    <Compile Include="ddlSOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="ddlTECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="ddlTERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="ddlTIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="ddlTIPO_EMPLEO.vb" />
+    <Compile Include="ddlUSUARIO.Partial.vb" />
+    <Compile Include="ddlUSUARIO.vb" />
+    <Compile Include="ddlUNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="ddlTIPO_SOLICITUD.vb" />
+    <Compile Include="ddlTIPO_PERSONA.vb" />
+    <Compile Include="ddlSUPERVISION_AF_DET.vb" />
+    <Compile Include="ddlSUPERVISION_AF.vb" />
+    <Compile Include="ddlSOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="ddlSOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="ddlSOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="ddlSOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="ddlSITIO_CAPACITACION.vb" />
+    <Compile Include="ddlREGION.vb" />
+    <Compile Include="ddlPROVEEDOR_AF.vb" />
+    <Compile Include="ddlPROGRAMA_FORMACION.vb" />
+    <Compile Include="ddlPROCESO.vb" />
+    <Compile Include="ddlPARTICIPANTE_AF.vb" />
+    <Compile Include="ddlPARTICIPANTE.vb" />
+    <Compile Include="ddlOPCION_MENU.vb" />
+    <Compile Include="ddlOPCION_GRUPO.vb" />
+    <Compile Include="ddlOFERTA_FORMATIVA.vb" />
+    <Compile Include="ddlNIVEL_ACADEMICO.vb" />
+    <Compile Include="ddlMUNICIPIO.vb" />
+    <Compile Include="ddlMODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="ddlMETODO_EVALUACION.vb" />
+    <Compile Include="ddlLISTA_SUPERVISION_AF.vb" />
+    <Compile Include="ddlINFORME_FINAL_DET.vb" />
+    <Compile Include="ddlINFORME_FINAL_AF.vb" />
+    <Compile Include="ddlHALLAZGO_SUPERVISION.vb" />
+    <Compile Include="ddlGRUPO_USUARIO.vb" />
+    <Compile Include="ddlFACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="ddlEVALUACIONES_AF_DET.vb" />
+    <Compile Include="ddlEVALUACION_AF.vb" />
+    <Compile Include="ddlETAPA.vb" />
+    <Compile Include="ddlESTADO_SOLICITUD.vb" />
+    <Compile Include="ddlESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="ddlEMPRESAS.vb" />
+    <Compile Include="ddlEJERCICIO.vb" />
+    <Compile Include="ddlDEPARTAMENTO.vb" />
+    <Compile Include="ddlCURSO_TEMA.vb" />
+    <Compile Include="ddlCONTROL_DOCUMENTOS.vb" />
+    <Compile Include="ddlCIUU.vb" />
+    <Compile Include="ddlCIUO.vb" />
+    <Compile Include="ddlCATCURSO_2.vb" />
+    <Compile Include="ddlASISTENCIA_AF_DET.vb" />
+    <Compile Include="ddlASISTENCIA_AF.vb" />
+    <Compile Include="ddlAREA_SUPERVISION.vb" />
+    <Compile Include="ddlACCION_FORMATIVA.vb" />
+    <Compile Include="ddlAREA_FORMACION.vb" />
+    <Compile Include="lbACCION_FORMATIVA_DETALLE.vb" />
+    <Compile Include="lbACCION_FORMATIVA_REPROG.vb" />
+    <Compile Include="lbACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="lbBase.vb" />
+    <Compile Include="lbCENTRO_RESPONSABILIDAD.vb" />
+    <Compile Include="lbCENTRO_RESPONSABILIDAD_UNIDAD.vb" />
+    <Compile Include="lbCONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="lbDESEMBOLSO.vb" />
+    <Compile Include="lbDESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="lbDISCAPACIDAD.vb" />
+    <Compile Include="lbDISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="lbDISCA_POR_SOLICITUD.vb" />
+    <Compile Include="lbEDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="lbESTADO_CIVIL.vb" />
+    <Compile Include="lbESTADO_REPROG.vb" />
+    <Compile Include="lbFASE.vb" />
+    <Compile Include="lbFASE_MUNICIPIOS.vb" />
+    <Compile Include="lbFUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="lbGRUPO_SOLICITUD.vb" />
+    <Compile Include="lbPAIS.vb" />
+    <Compile Include="lbPAQUETE_INFORME.vb" />
+    <Compile Include="lbPAQUETE_INFORME_DET.vb" />
+    <Compile Include="lbPARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="lbPROGRAMA_FORMACION_TIPOPAGO.vb" />
+    <Compile Include="lbPROYECTO_FORMACION.vb" />
+    <Compile Include="lbREFERENCIA.vb" />
+    <Compile Include="lbREFERENTE.vb" />
+    <Compile Include="lbSITIO_CAPACITACION.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lbSOLICITUD_CAPACITACION.vb" />
+    <Compile Include="lbSOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="lbTECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="lbTERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="lbTIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="lbTIPO_EMPLEO.vb" />
+    <Compile Include="lbUSUARIO.vb" />
+    <Compile Include="lbUNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="lbTIPO_SOLICITUD.vb" />
+    <Compile Include="lbTIPO_PERSONA.vb" />
+    <Compile Include="lbSUPERVISION_AF_DET.vb" />
+    <Compile Include="lbSUPERVISION_AF.vb" />
+    <Compile Include="lbSOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="lbSOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="lbSOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="lbSOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="lbREGION.vb" />
+    <Compile Include="lbPROVEEDOR_AF.vb" />
+    <Compile Include="lbPROGRAMA_FORMACION.vb" />
+    <Compile Include="lbPROCESO.vb" />
+    <Compile Include="lbPARTICIPANTE_AF.vb" />
+    <Compile Include="lbPARTICIPANTE.vb" />
+    <Compile Include="lbOPCION_MENU.vb" />
+    <Compile Include="lbOPCION_GRUPO.vb" />
+    <Compile Include="lbOFERTA_FORMATIVA.vb" />
+    <Compile Include="lbNIVEL_ACADEMICO.vb" />
+    <Compile Include="lbMUNICIPIO.vb" />
+    <Compile Include="lbMODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="lbMETODO_EVALUACION.vb" />
+    <Compile Include="lbLISTA_SUPERVISION_AF.vb" />
+    <Compile Include="lbINFORME_FINAL_DET.vb" />
+    <Compile Include="lbINFORME_FINAL_AF.vb" />
+    <Compile Include="lbHALLAZGO_SUPERVISION.vb" />
+    <Compile Include="lbGRUPO_USUARIO.vb" />
+    <Compile Include="lbFACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="lbEVALUACIONES_AF_DET.vb" />
+    <Compile Include="lbEVALUACION_AF.vb" />
+    <Compile Include="lbETAPA.vb" />
+    <Compile Include="lbESTADO_SOLICITUD.vb" />
+    <Compile Include="lbESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="lbEMPRESAS.vb" />
+    <Compile Include="lbEJERCICIO.vb" />
+    <Compile Include="lbDEPARTAMENTO.vb" />
+    <Compile Include="lbCURSO_TEMA.vb" />
+    <Compile Include="lbCONTROL_DOCUMENTOS.vb" />
+    <Compile Include="lbCIUU.vb" />
+    <Compile Include="lbCIUO.vb" />
+    <Compile Include="lbCATCURSO_2.vb" />
+    <Compile Include="lbASISTENCIA_AF_DET.vb" />
+    <Compile Include="lbASISTENCIA_AF.vb" />
+    <Compile Include="lbAREA_SUPERVISION.vb" />
+    <Compile Include="lbACCION_FORMATIVA.vb" />
+    <Compile Include="lbAREA_FORMACION.vb" />
+    <Compile Include="ddlOFERTA_FORMATIVA.Partial.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_BL\SGAFP_BL.vbproj">
+      <Project>{BCF1CEF8-83B8-4010-9405-A3EA043B8E9C}</Project>
+      <Name>SGAFP_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

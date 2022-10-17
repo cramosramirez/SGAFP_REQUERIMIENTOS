@@ -1,0 +1,603 @@
+/* SGAFP CSS Stylesheet  */
+
+BODY
+{
+    BACKGROUND-COLOR: #ffffe0;
+    FONT: 8pt "Arial", sans-serif;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    WORD-SPACING: normal
+}
+
+/* BANNER DE PAGINA */
+.TituloSitio
+{
+	FONT-WEIGHT: bold;
+      FONT-STYLE: normal;
+	FONT-SIZE: 22px;
+	COLOR: white;
+	FONT-FAMILY: "Arial", sans-serif;
+	BACKGROUND-COLOR: darkblue;
+}
+
+/* Color de fondo y borde para los tabs seleccionados */
+.FondoTab {
+    background-color: palegoldenrod;
+    border-color: white;
+}
+
+/* Color de fondo y borde para los tabs NO seleccionados  */
+.FondoOtrosTabs
+{
+	border-left-color: black;
+	border-bottom-color: black;
+	border-top-color: black;
+	background-color: palegoldenrod;
+	border-right-color: black;
+}
+
+/* Estilo de texto para el tab seleccionado */
+.TabSeleccionado
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: #003366;
+	font-family: "Arial", sans-serif;
+	background-color: palegoldenrod;
+	text-align: center;
+}
+
+/* Estilo de texto para el tab NO seleccionados */
+.OtrosTabs
+{
+	border-right: palegoldenrod 1px solid;
+	border-top: palegoldenrod 1px solid;
+	font-weight: normal;
+	font-size: 13px;
+	border-left: palegoldenrod 1px solid;
+	color: #000099;
+	border-bottom: palegoldenrod 1px solid;
+	font-family: "Arial", sans-serif;
+	background-color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+.GridListFooter
+{
+	line-height: 10pt;
+	background-color: #99ccff;
+}
+
+.GridListHead
+{
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 11px;
+	border-left: dimgray 1px solid;
+	color: #003366;
+	line-height: 20pt;
+	border-bottom: dimgray;
+	font-family: "Arial", sans-serif;
+	background-color: #99ccff;
+}
+
+.GridListItemAlt
+{
+	padding-left: 5px;
+	font-size: 11px;
+	border-left: dimgray 1px solid;
+	color: black;
+	border-bottom: dimgray;
+	font-family: "Arial", sans-serif;
+	background-color: #cccccc;
+}
+
+.GridListItem
+{
+	padding-left: 5px;
+	font-size: 11px;
+	border-left: dimgray 1px solid;
+	color: black;
+	border-bottom: dimgray;
+	font-family: "Arial", sans-serif;
+	background-color: transparent;
+}
+
+.GridSelectedItem
+{
+	padding-left: 5px;
+	font-size: 11px;
+	border-left: dimgray 1px solid;
+	color: black;
+	border-bottom: dimgray;
+	font-family: "Arial", sans-serif;
+	background-color: cornflowerblue;
+}
+
+A.OtrosTabs:link
+{
+	color: #000099;
+	text-decoration: none;
+}
+
+A.OtrosTabs:visited
+{
+	color: #000099;
+	text-decoration: none;
+}
+
+A.OtrosTabs:active
+{
+	font-weight: bold;
+	color: #000099;
+	text-decoration: none;
+}
+
+A.OtrosTabs:hover
+{
+	color: white;
+	text-decoration: underline;
+}
+    
+/* Estilo texto para los vínculos del sitio (Parte superiror derecha del encabezado)  */
+.SiteLink {
+    font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}   
+
+/* Estilo de los hyperlink del sitio */
+A.SiteLink:link {
+    text-decoration:    none;
+    color:white;
+}
+
+A.SiteLink:visited  {
+    text-decoration:    none;
+    color:#eeeeee;
+}
+
+A.SiteLink:active   {
+    text-decoration:    none;
+    color:#eeeeee;
+}
+
+A.SiteLink:hover    {
+    text-decoration:    underline;
+    color:white;
+}
+
+/* Estilo para los separadores entre los vínculos */
+.Accent
+{
+	font-weight: bold;
+	font-size: x-small;
+	color: #003366;
+}
+
+H1, H2, H3, H4, H5, TH, THEAD, TFOOT
+{
+    COLOR: #003366;
+}
+H1	{	
+	font-family: "Arial", sans-serif;
+	font-size:	2em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+
+/* GENERAL */
+
+/* Estilo de los títulos de los módulos */
+.Encabezado   {
+	font-family: "Arial", sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #003366;
+}
+
+/* style of item titles on edit and admin pages */
+.SubEncabezado    {
+	font-family: "Arial", sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: #003366;
+}
+
+.EncabezadoContenido    {
+	font-family: "Arial", sans-serif;
+    font-size:  20px;
+    font-weight:    bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: darkblue ;
+}
+
+.SubSubEncabezado {
+	font-family: "Arial", sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: black;
+}
+.SubEncabezadoContenido
+{
+    background-color: Silver;
+    color: #003366;
+	font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: Normal;
+    height: 20px
+}
+
+.EncabezadoSecciones
+{
+	padding-right: 8px;
+	padding-left: 8px;
+	font-weight: bold;
+	font-size: 20px;
+	background: #ffffff;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	color: #77797d;
+	padding-top: 5px;
+	font-family: "Agency FB";
+    letter-spacing:1px;
+}
+
+.Normal
+{
+	font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.NormalUPPER
+{
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: "Arial", sans-serif;
+}
+
+.NormalItalic
+{
+	font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style:italic;
+    line-height: 16px    
+}
+
+.BoldItalic
+{
+	font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    font-style:italic;
+    line-height: 16px    
+}
+
+.NormalTextBox
+{
+	font-family: "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.NormalRed
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: red;
+	font-family: "Arial", sans-serif;
+	background-color: transparent;
+}
+
+.NormalBold
+{
+	font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: bold
+}
+
+.CommandButton     {
+	font-family: "Arial", sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+    
+A.CommandButton:link {
+    text-decoration:    underline;
+    color: #003366;
+}
+
+A.CommandButton:visited  {
+    text-decoration:    underline;
+    color: #003366;
+}
+
+A.CommandButton:active   {
+    text-decoration:    underline;
+    color: #003366;
+}
+
+A.CommandButton:hover    {
+    text-decoration:    underline;
+    color: #003366;
+}
+		
+H2	{	
+	font-family: "Arial", sans-serif;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	font-family: "Arial", sans-serif;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	font-family: "Arial", sans-serif;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	font-family: "Arial", sans-serif;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	font-family: "Arial", sans-serif;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD	{	
+	font-size:	1em;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: "Arial", sans-serif;
+	}	
+		
+TH	{	
+	vertical-align:	baseline;
+	font-size:	1em;
+	font-weight:	bold;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	font-family: "Arial", sans-serif;
+	}	
+
+A:link	{	
+	text-decoration:	none;
+	color:	Navy;
+	}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#333399;
+	}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	#3333cc;
+	}
+	
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.17em;
+	}	
+
+BLOCKQUOTE, PRE	{	
+	font-family:	Courier New, monospace;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+.MensajeInformativo
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: darkblue;
+	font-family: "Arial", sans-serif;
+	background-color: transparent;
+}
+
+.MensajeError
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: Red;
+	font-family: "Arial", sans-serif;
+	background-color: transparent;
+}
+
+.DDLClass
+{
+	background-color:#ffffcc; 
+	COLOR:#000000;
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:right;
+	BORDER-STYLE:inset
+}
+
+.DDLClassDisabled
+{
+	background-color:#fff9e6; 
+	COLOR:#000000;
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:right;
+	BORDER-STYLE:inset
+}
+
+.TextoLlaveDerecha
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:right;
+	background-color:#a6caf0; 
+	COLOR:#000000;
+}
+
+.TextoLlaveIzquierda
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:left;
+	background-color:#a6caf0; 
+	COLOR:#000000;
+}
+
+.TextoNormalDerecha
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:right;
+	background-color:#ffffcc; 
+	COLOR:#000000;
+}
+
+.TextoNormalIzquierda
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:left;
+	background-color:#ffffcc; 
+	COLOR:#000000;
+}
+
+.TextoNormalCentrado
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:center;
+	background-color:#ffffcc; 
+	COLOR:#000000;
+}
+
+.TextoNormalIzquierdaDisabled
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:left;
+	background-color:#fff9e6; 
+	COLOR:#000000;
+}
+
+.TextoNormalDerechaDisabled
+{
+	FONT:8pt "Arial", sans-serif;
+	FONT-STYLE:normal;
+	FONT-WEIGHT:normal;
+	TEXT-DECORATION:none;
+	TEXT-ALIGN:right;
+	background-color:#fff9e6; 
+	COLOR:#000000;
+}
+.calendario .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: #ffffcc;
+    color: red;
+}
+.calendario .ajax__calendar_other .ajax__calendar_day,
+.calendario .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.calendario .ajax__calendar_hover .ajax__calendar_day,
+.calendario .ajax__calendar_hover .ajax__calendar_month,
+.calendario .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}
+.calendario .ajax__calendar_active .ajax__calendar_day,
+.calendario .ajax__calendar_active .ajax__calendar_month,
+.calendario .ajax__calendar_active .ajax__calendar_year {
+    color: black;
+    font-weight:bold;
+}

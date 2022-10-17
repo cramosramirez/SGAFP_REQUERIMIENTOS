@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{42A91AA2-475A-4BBA-8A0A-B7F4CB17796F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.DL</RootNamespace>
+    <AssemblyName>SGAFP_DL</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <OptionStrict>On</OptionStrict>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/SGAFP_DL/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_DL.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_DL.xml</DocumentationFile>
+    <NoWarn>42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationBlocks.Data.OdbcHelper">
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\Microsoft.ApplicationBlocks.Data.OdbcHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f6f5017b0e8e1912, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.ApplicationBlocks.Data.OracleClient" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="Microsoft.ApplicationBlocks.Data" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data.OracleClient" />
+    <Import Include="System.Text" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dbACCION_FORMATIVA.Partial.vb" />
+    <Compile Include="dbACCION_FORMATIVA_DETALLE.vb" />
+    <Compile Include="dbACCION_FORMATIVA_HIST.Partial.vb" />
+    <Compile Include="dbACCION_FORMATIVA_HIST.vb" />
+    <Compile Include="dbACCION_FORMATIVA_PATI.vb" />
+    <Compile Include="dbACCION_FORMATIVA_PENA.vb" />
+    <Compile Include="dbACCION_FORMATIVA_REPROG.Partial.vb" />
+    <Compile Include="dbACCION_FORMATIVA_REPROG.vb" />
+    <Compile Include="dbACCION_FORMATIVA_SEGUI.vb" />
+    <Compile Include="dbACCION_PROGRA_RETRO.Partial.vb" />
+    <Compile Include="dbACCION_PROGRA_RETRO.vb" />
+    <Compile Include="dbACCION_VISITAS_SEGUI.vb" />
+    <Compile Include="dbACTI_ECONOMICA.vb" />
+    <Compile Include="dbAREA_EMPRESA.vb" />
+    <Compile Include="dbAREA_FORMACION.Partial.vb" />
+    <Compile Include="dbAREA_FORMACION_CONTRA.Partial.vb" />
+    <Compile Include="dbAREA_FORMACION_CONTRA.vb" />
+    <Compile Include="dbAsignarEntidades.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbASISTENCIA_AF.Partial.vb" />
+    <Compile Include="dbASISTENCIA_AF_DET.Partial.vb" />
+    <Compile Include="dbASISTENCIA_AF_HORARIO.Partial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbASISTENCIA_AF_HORARIO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="dbASISTENCIA_AF_HORARIO_REPROG.Partial.vb" />
+    <Compile Include="dbASISTENCIA_AF_HORARIO_REPROG.vb" />
+    <Compile Include="dbASISTENCIA_AF_REPROG.Partial.vb" />
+    <Compile Include="dbASISTENCIA_AF_REPROG.vb" />
+    <Compile Include="dbASISTENCIA_PAGO.vb" />
+    <Compile Include="dbASISTENCIA_PAGO_DET.Partial.vb" />
+    <Compile Include="dbASISTENCIA_PAGO_DET.vb" />
+    <Compile Include="dbBase.vb" />
+    <Compile Include="dbCALE_FECHA.vb" />
+    <Compile Include="dbCALE_HORARIO.vb" />
+    <Compile Include="dbCENTRO_RESPONSABILIDAD.vb" />
+    <Compile Include="dbCENTRO_RESPONSABILIDAD_UNIDAD.vb" />
+    <Compile Include="dbCOMPRA_EX_PAGO_ASISTE.Partial.vb" />
+    <Compile Include="dbCOMPRA_EX_PAGO_ASISTE.vb" />
+    <Compile Include="dbCOMPROMISO_AF.Partial.vb" />
+    <Compile Include="dbCOMPROMISO_AF.vb" />
+    <Compile Include="dbCOMPROMISO_CONTRATO.vb" />
+    <Compile Include="dbCONTRATO_COMPRA.Partial.vb" />
+    <Compile Include="dbCONTRATO_COMPRA.vb" />
+    <Compile Include="dbCONTRATO_COMPRA_PENALIZACION.Partial.vb" />
+    <Compile Include="dbCONTRATO_COMPRA_PENALIZACION.vb" />
+    <Compile Include="dbCONTRATO_COMPRA_PGOACTIVOS.vb" />
+    <Compile Include="dbCONTRATO_PROVEEDOR_AF.Partial.vb" />
+    <Compile Include="dbCONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="dbCONTRATO_SUB_AREA_FORMACION.Partial.vb" />
+    <Compile Include="dbCONTRATO_SUB_AREA_FORMACION.vb" />
+    <Compile Include="dbCURSO_TEMA.Partial.vb" />
+    <Compile Include="dbDEPARTAMENTO.Partial.vb" />
+    <Compile Include="dbDESEMBOLSO.Partial.vb" />
+    <Compile Include="dbDESEMBOLSO.vb" />
+    <Compile Include="dbDESEMBOLSO_MUNI_LIQUI_DET.Partial.vb" />
+    <Compile Include="dbDESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="dbDISCAPACIDAD.vb" />
+    <Compile Include="dbDISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="dbDISCA_POR_SOLICITUD.vb" />
+    <Compile Include="dbDISCA_SOLIC_PRESELE.vb" />
+    <Compile Include="dbEDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="dbEjecucionReporte.vb" />
+    <Compile Include="dbESTADO_CIVIL.vb" />
+    <Compile Include="dbESTADO_INFORME_AF.vb" />
+    <Compile Include="dbESTADO_REPROG.vb" />
+    <Compile Include="dbEVALUACIONES_AF_DET.Partial.vb" />
+    <Compile Include="dbEVALUACION_AF.Partial.vb" />
+    <Compile Include="dbFACTURA_AF.Partial.vb" />
+    <Compile Include="dbFACTURA_AF.vb" />
+    <Compile Include="dbFACTURA_DET.Partial.vb" />
+    <Compile Include="dbFACTURA_DET.vb" />
+    <Compile Include="dbFASE.vb" />
+    <Compile Include="dbFASE_ESTADO_INFORME.vb" />
+    <Compile Include="dbFASE_MUNICIPIOS.Partial.vb" />
+    <Compile Include="dbFASE_MUNICIPIOS.vb" />
+    <Compile Include="dbFUENTE_FINANCIAMIENTO.Partial.vb" />
+    <Compile Include="dbFUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="dbFUENTE_MUNICIPIO.Partial.vb" />
+    <Compile Include="dbFUENTE_MUNICIPIO.vb" />
+    <Compile Include="dbGRUPO_SELECCION.Partial.vb" />
+    <Compile Include="dbGRUPO_SELECCION.vb" />
+    <Compile Include="dbGRUPO_SOLICITUD.Partial.vb" />
+    <Compile Include="dbGRUPO_SOLICITUD.vb" />
+    <Compile Include="dbINFORME_FINAL_AF.Partial.vb" />
+    <Compile Include="dbINFORME_FINAL_AF_HIS.Partial.vb" />
+    <Compile Include="dbINFORME_FINAL_AF_HIS.vb" />
+    <Compile Include="dbINFORME_FINAL_DET.Partial.vb" />
+    <Compile Include="dbINFORME_PRESELECCION_EC.vb" />
+    <Compile Include="dbINGRESO_MES.vb" />
+    <Compile Include="dbMOTIVO_DEJO_ESTU.vb" />
+    <Compile Include="dbMOTIVO_DEJO_TRAB.vb" />
+    <Compile Include="dbMUNICIPIO.Partial.vb" />
+    <Compile Include="dbMUNICIPIO_CONVOCATORIA.Partial.vb" />
+    <Compile Include="dbMUNICIPIO_CONVOCATORIA.vb" />
+    <Compile Include="dbMUNICIPIO_LIQUIDACION.Partial.vb" />
+    <Compile Include="dbMUNICIPIO_LIQUIDACION.vb" />
+    <Compile Include="dbMUNICIPIO_LIQUIDACION_DET.vb" />
+    <Compile Include="dbNIVEL_ACADEMICO.Partial.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA.Partial.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA_DEPTO.Partial.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA_DEPTO.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA_SITIO.Partial.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA_SITIO.vb" />
+    <Compile Include="dbPAIS.Partial.vb" />
+    <Compile Include="dbPAIS.vb" />
+    <Compile Include="dbPAQUETE_INFORME.Partial.vb" />
+    <Compile Include="dbPAQUETE_INFORME.vb" />
+    <Compile Include="dbPAQUETE_INFORME_DET.Partial.vb" />
+    <Compile Include="dbPAQUETE_INFORME_DET.vb" />
+    <Compile Include="dbPARTICIPANTE.Partial.vb" />
+    <Compile Include="dbPARTICIPANTE_AF.Partial.vb" />
+    <Compile Include="dbPARTICIPANTE_EXONERADO_DOC.Partial.vb" />
+    <Compile Include="dbPARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="dbPROGRAMA_FORMACION_TIPOPAGO.vb" />
+    <Compile Include="dbPROVEEDOR_AF.Partial.vb" />
+    <Compile Include="dbPROYECTO_FORMACION.vb" />
+    <Compile Include="dbRANGO_PORC_PENA.Partial.vb" />
+    <Compile Include="dbRANGO_PORC_PENA.vb" />
+    <Compile Include="dbREFERENCIA.vb" />
+    <Compile Include="dbREFERENTE.vb" />
+    <Compile Include="dbROL_PROGRAMA.vb" />
+    <Compile Include="dbSIPU_CAPACITACIONES.Partial.vb" />
+    <Compile Include="dbSIPU_CAPACITACIONES.vb" />
+    <Compile Include="dbSIPU_DETALLECAPACITADO.Partial.vb" />
+    <Compile Include="dbSIPU_DETALLECAPACITADO.vb" />
+    <Compile Include="dbSIPU_GENERACION.vb" />
+    <Compile Include="dbSIPU_MUNICIPIO.vb" />
+    <Compile Include="dbSIPU_TIPOCAPACITACIONES.vb" />
+    <Compile Include="dbSITIO_CAPACITACION.Partial.vb" />
+    <Compile Include="dbSITIO_CAPACITACION_EJERCICIO.vb" />
+    <Compile Include="dbSOLICITUD_CAPACITACION.vb" />
+    <Compile Include="dbSOLICITUD_INSCRIPCION_AF.Partial.vb" />
+    <Compile Include="dbSOLICITUD_INSCRIPCION_EC.vb" />
+    <Compile Include="dbSOLICITUD_PRESELECCION_EC.Partial.vb" />
+    <Compile Include="dbSOLICITUD_PRESELECCION_EC.vb" />
+    <Compile Include="dbSOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="dbSOLIC_PRESELE_CURREC.vb" />
+    <Compile Include="dbSOLIC_PRESELE_EMPRE.vb" />
+    <Compile Include="dbSUB_AREA_FORMACION.Partial.vb" />
+    <Compile Include="dbSUB_AREA_FORMACION.vb" />
+    <Compile Include="dbTECNICOS_SITIOS_ASIG.Partial.vb" />
+    <Compile Include="dbTECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="dbTERMINO_REFERENCIA_AF.Partial.vb" />
+    <Compile Include="dbTERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="dbTIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="dbTIEMPO_NOTRAB.vb" />
+    <Compile Include="dbTIPO_ADJUDICACION.vb" />
+    <Compile Include="dbTIPO_EMPLEO.vb" />
+    <Compile Include="dbTIPO_PENALIZA.vb" />
+    <Compile Include="dbTIPO_SELECC.vb" />
+    <Compile Include="dbUNIDAD_ORGANIZATIVA.Partial.vb" />
+    <Compile Include="dbUSUARIO.Partial.vb" />
+    <Compile Include="dbUSUARIO.vb" />
+    <Compile Include="dbUNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="dbTIPO_SOLICITUD.vb" />
+    <Compile Include="dbTIPO_PERSONA.vb" />
+    <Compile Include="dbSUPERVISION_AF_DET.vb" />
+    <Compile Include="dbSUPERVISION_AF.vb" />
+    <Compile Include="dbSOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="dbSOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="dbSOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="dbSOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="dbSITIO_CAPACITACION.vb" />
+    <Compile Include="dbREGION.vb" />
+    <Compile Include="dbPROVEEDOR_AF.vb" />
+    <Compile Include="dbPROGRAMA_FORMACION.vb" />
+    <Compile Include="dbPROCESO.vb" />
+    <Compile Include="dbPARTICIPANTE_AF.vb" />
+    <Compile Include="dbPARTICIPANTE.vb" />
+    <Compile Include="dbOPCION_MENU.vb" />
+    <Compile Include="dbOPCION_GRUPO.vb" />
+    <Compile Include="dbOFERTA_FORMATIVA.vb" />
+    <Compile Include="dbNIVEL_ACADEMICO.vb" />
+    <Compile Include="dbMUNICIPIO.vb" />
+    <Compile Include="dbMODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="dbMETODO_EVALUACION.vb" />
+    <Compile Include="dbLISTA_SUPERVISION_AF.vb" />
+    <Compile Include="dbINFORME_FINAL_DET.vb" />
+    <Compile Include="dbINFORME_FINAL_AF.vb" />
+    <Compile Include="dbHALLAZGO_SUPERVISION.vb" />
+    <Compile Include="dbGRUPO_USUARIO.vb" />
+    <Compile Include="dbFACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="dbEVALUACIONES_AF_DET.vb" />
+    <Compile Include="dbEVALUACION_AF.vb" />
+    <Compile Include="dbETAPA.vb" />
+    <Compile Include="dbESTADO_SOLICITUD.vb" />
+    <Compile Include="dbESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="dbEMPRESAS.vb" />
+    <Compile Include="dbEJERCICIO.vb" />
+    <Compile Include="dbDEPARTAMENTO.vb" />
+    <Compile Include="dbCURSO_TEMA.vb" />
+    <Compile Include="dbCONTROL_DOCUMENTOS.vb" />
+    <Compile Include="dbCIUU.vb" />
+    <Compile Include="dbCIUO.vb" />
+    <Compile Include="dbCATCURSO_2.vb" />
+    <Compile Include="dbASISTENCIA_AF_DET.vb" />
+    <Compile Include="dbASISTENCIA_AF.vb" />
+    <Compile Include="dbAREA_SUPERVISION.vb" />
+    <Compile Include="dbACCION_FORMATIVA.vb" />
+    <Compile Include="dbAREA_FORMACION.vb" />
+    <Compile Include="DS_DL.vb">
+      <DependentUpon>DS_DL.xsd</DependentUpon>
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <Compile Include="dbACCION_CONTRATADA.vb" />
+    <Compile Include="dbACCION_CONTRATADA.Partial.vb" />
+    <Compile Include="dbACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="dbCONTRATO_BOLPROS.Partial.vb" />
+    <Compile Include="dbCONTRATO_BOLPROS.vb" />
+    <Compile Include="dbGRUPO_ACCION_CONTRATADA.vb" />
+    <Compile Include="dbPROGRAMA_FORMACION.Partial.vb" />
+    <Compile Include="dbSOLICITUD_CAPACITACION.Partial.vb" />
+    <Compile Include="DS_DL.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_DL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbTIPO_CONTRATACION.vb" />
+    <None Include="DS_DL.xsc">
+      <DependentUpon>DS_DL.xsd</DependentUpon>
+    </None>
+    <None Include="DS_DL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_DL.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DS_DL.xss">
+      <DependentUpon>DS_DL.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

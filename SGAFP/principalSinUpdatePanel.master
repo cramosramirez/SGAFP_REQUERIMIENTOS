@@ -1,0 +1,216 @@
+﻿<%@ Master Language="VB" CodeFile="principalSinUpdatePanel.master.vb" Inherits="principalSinUpdatePanel" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.ASPxEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxNavBar" TagPrefix="dx" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+<%@ Register Src="~/controles/ucBarraNavegacion.ascx" TagName="ucBarraNavegacion" TagPrefix="uc1" %>
+<%@ Register assembly="DevExpress.Web.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxSplitter" tagprefix="dx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        html, body, form {
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+        }
+        </style>
+    <link href="Styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body onresize="ReDimensionar();">
+    <div id="wrapper">
+        <form id="form1" runat="server">
+        <dx:ASPxPopupControl ID="pcMessageBox" ClientInstanceName="pcMessageBox" runat="server"
+            Modal="true" ShowOnPageLoad="false" AppearAfter="0" HeaderText="Mensaje" Height="100px"
+            PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter" Text=""
+            Width="200px" AllowDragging="True" AllowResize="True" CloseAction="CloseButton"
+            PopupAction="None">
+            <ContentStyle HorizontalAlign="Center">
+            </ContentStyle>
+            <ContentCollection>
+                <dx:PopupControlContentControl ID="PopupControlContentControl1" runat="server">
+                    <dx:ASPxLabel ID="aspxMensajeAlerta" runat="server" ClientInstanceName="aspxMensajeAlerta">
+                    </dx:ASPxLabel>
+                    <br />
+                    <br />
+                    <dx:ASPxButton ID="ASPxButton1" runat="server" Text="Aceptar" AutoPostBack="False" ClientInstanceName="pcMessageBoxBoton" CausesValidation="False"
+                        UseSubmitBehavior="False">
+                        <ClientSideEvents Click="function(s, e) {
+    pcMessageBox.Hide();
+}" />
+                    </dx:ASPxButton>
+                </dx:PopupControlContentControl>
+            </ContentCollection>
+        </dx:ASPxPopupControl>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" AsyncPostBackTimeout="0">
+        </asp:ScriptManager>
+       
+        <div>
+            <table width="100%" cellpadding="0" cellspacing="0" style="border-style:none;">
+                <tr style="background-color:#272766; height:73px;">
+                    <td style="padding-left:10px" >
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/logoInsaforp.png" BorderStyle="None"  />
+                    </td>
+                    <td></td>
+                    <td colspan="2" align="right" valign="middle"  style="padding-right:5px; color: #FFFFFF; font-size: 9pt; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                        <asp:Image ID="Image8" runat="server" ImageUrl="~/imagenes/spacer.gif" Height="16px" />
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" LoginImageUrl="~/imagenes/loginTexto.png" LogoutImageUrl="~/imagenes/logoutTexto.png"    />
+                    </td>
+                </tr>
+                <tr style="height:30px;">
+                    <td style="padding-left: 15px" align="left">
+                         <asp:Label ID="Label_Usuario" runat="server" Font-Bold="true" Font-Names="Arial"  Font-Size="Small" Text="&nbsp;"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" CssClass="MensajeError"
+            ShowMessageBox="True" Width="100%" ShowSummary="False"></asp:ValidationSummary>        
+        <dx:ASPxSplitter ID="contenidoSplitter" runat="server" Width="100%" ClientInstanceName="contenidoSplitter">
+        <Styles>
+            <Pane>
+                <Paddings Padding="1px" /> 
+            </Pane>
+        </Styles>
+            <Panes>
+                <dx:SplitterPane ShowCollapseBackwardButton="True" AllowResize="False" 
+                    Size="20%" MaxSize="256px">
+                 <ContentCollection>
+                                <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+            <table border="0" cellpadding="0" cellspacing="0" width="246px" style="height:100%; font-family: Arial, Helvetica, sans-serif;font-size: 90%; padding-left:4px;">
+                <tr style="height: 10px">
+                    <td colspan="2">                         
+                    </td>                   
+                </tr>
+                <tr style="height: auto">
+                    <td style="width:15px">                        
+                    </td>
+                    <td style="width: 229px;" valign="top">
+                    <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" 
+                                                        DataSourceID="SiteMapDataSource1" AutoCollapse="True" 
+                                                        AllowSelectItem="True" EnableViewState="False" EncodeHtml="False" 
+                                                        EnableAnimation="True" EnableCallBacks="True" 
+                            EnableHotTrack="True" EnableTheming="False" ExpandButtonPosition="Left" 
+                            ExpandGroupAction="MouseOver"  Width="229px" 
+                            EnableDefaultAppearance="False" GroupSpacing="0px" ItemLinkMode="TextOnly" Visible="True">
+                        <CollapseImage Url="~/imagenes/expandir.png">
+                        </CollapseImage>
+                        <GroupContentStyle ForeColor="#000066">
+                        </GroupContentStyle>
+                        <ItemStyle Font-Bold="True" Font-Overline="False" Font-Size="12px" 
+                            Font-Strikeout="False" Font-Underline="False"  
+                            ForeColor="#000066">
+                        <SelectedStyle Font-Bold="True" Font-Italic="False" Font-Overline="False" ForeColor="#ffffff"  
+                            Font-Underline="False" BackColor="#ef4822">                            
+                        </SelectedStyle>                            
+                        <Paddings PaddingLeft="20px" PaddingBottom="2px" PaddingTop="2px" />
+                        </ItemStyle>
+                        <GroupHeaderStyle Font-Underline="false" Font-Bold="True" HorizontalAlign="Left" 
+                            Height="15px" ForeColor="#000066">
+                            <Paddings Padding="5px" />
+                        </GroupHeaderStyle>
+                        <ExpandImage Url="~/imagenes/colapsar.png">
+                        </ExpandImage>
+                        
+                                                    </dx:ASPxNavBar>
+                    <dx:ASPxNavBar ID="ASPxNavBar2" Visible="false" runat="server"
+                                                        AutoCollapse="True" 
+                                                        AllowSelectItem="True" EnableViewState="False" EncodeHtml="False" 
+                                                        EnableAnimation="True" EnableCallBacks="True" 
+                            EnableHotTrack="False" EnableTheming="False" ExpandButtonPosition="Left" 
+                            ExpandGroupAction="MouseOver" Width="229px" 
+                            EnableDefaultAppearance="False" GroupSpacing="0px" ItemLinkMode="TextOnly" >
+                        <CollapseImage Url="~/imagenes/d7.gif">
+                        </CollapseImage>
+                        <GroupContentStyle BackColor="#7DB3D7" ForeColor="#000066">
+                        </GroupContentStyle>
+                        <ItemStyle Font-Bold="True" Font-Overline="False" Font-Size="X-Small" 
+                            Font-Strikeout="False" Font-Underline="True" BackColor="#7DB3D7" 
+                            ForeColor="#000066">
+                        <SelectedStyle Font-Bold="True" Font-Italic="True" Font-Overline="False" 
+                            Font-Underline="True" BackColor="#6699FF">
+                        </SelectedStyle>
+                        <Paddings PaddingLeft="20px" PaddingBottom="2px" PaddingTop="2px" />
+                        </ItemStyle>
+                        <GroupHeaderStyle BackColor="#7DB3D7" Font-Bold="True" HorizontalAlign="Left" 
+                            Height="15px" ForeColor="#000066">
+                            <Paddings Padding="5px" />
+                        </GroupHeaderStyle>
+                        <ExpandImage Url="~/imagenes/d6.gif">
+                        </ExpandImage>
+                        <BackgroundImage ImageUrl="~/imagenes/spacer.gif" />
+                                                    </dx:ASPxNavBar>
+                     
+                    </td>
+                </tr>                
+            </table>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+                                </dx:SplitterContentControl>
+                            </ContentCollection>
+                </dx:SplitterPane>
+                <dx:SplitterPane ScrollBars="Auto">
+                    <ContentCollection>
+                        <dx:SplitterContentControl ID="SplitterContentControl2" runat="server">
+                                <dx:ASPxImage ID="imgTituloOpcion" runat="server" Visible="false" Height="24px" 
+                                    Width="24px">
+                                </dx:ASPxImage>
+                                <dx:ASPxLabel ID="lblTituloOpcion" runat="server" Visible="false" 
+                                    Font-Bold="False" Font-Names="Berlin Sans FB" Font-Size="Large" 
+                                    ForeColor="#004070" CssClass="TituloControl">
+                                </dx:ASPxLabel>
+                                <uc1:ucBarraNavegacion ID="ucBarraNavegacion1" runat="server" Visible="false" />
+                                <div id="mensajeError">
+                                    <asp:Label ID="LabelMensajeError" runat="server" Text="" Visible="false"></asp:Label>
+                                </div>
+                            <asp:ContentPlaceHolder ID="contenido" runat="server">
+                                    <!Pagespecific content will go here... >
+                                </asp:ContentPlaceHolder>
+                            <div class="div_footer">
+                                Se recomienda usar este sitio con los exploradores: Mozilla Firefox versión 46 o superior / Internet Explorer 9 o superior.
+                            </div>  
+                        </dx:SplitterContentControl>
+                    </ContentCollection>
+                </dx:SplitterPane>
+            </Panes>
+        </dx:ASPxSplitter>
+        </form>
+    </div>
+    <script language="javascript" type="text/javascript">
+        ReDimensionar();
+        function ReDimensionar() {
+            try {
+                contenidoSplitter.SetWidth(document.getElementById("wrapper").offsetWidth);
+                contenidoSplitter.SetHeight(document.getElementById("wrapper").offsetHeight - 106);
+            } catch (e) {
+            }
+
+        }
+        function OcultarBotonAceptar() {
+            pcMessageBoxBoton.SetVisible(false);
+        }
+        function AsignarMensaje(mensaje) {
+            pcMessageBoxBoton.SetVisible(true);
+            aspxMensajeAlerta.SetText(mensaje);
+            pcMessageBox.Show();
+            pcMessageBox.UpdatePosition();
+        }
+        function OcultarMensaje() {            
+            pcMessageBox.Hide();            
+        }      
+        function SetContenido(width, height) {            
+            pcMessageBox.SetSize(width, height);
+            pcMessageBox.UpdatePosition();
+        }
+    </script>
+
+</body>
+</html>

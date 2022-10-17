@@ -1,0 +1,473 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.EL</RootNamespace>
+    <AssemblyName>SGAFP_EL</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_EL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_EL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Runtime.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="atributos.vb" />
+    <Compile Include="configuracion.vb" />
+    <Compile Include="entidadBase.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA.Partial.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_DETALLE.Partial.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_PENA.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_SEGUI.vb" />
+    <Compile Include="entidades\ACCION_PROGRA_RETRO.vb" />
+    <Compile Include="entidades\ACCION_VISITAS_SEGUI.vb" />
+    <Compile Include="entidades\ACTI_ECONOMICA.vb" />
+    <Compile Include="entidades\AREA_EMPRESA.vb" />
+    <Compile Include="entidades\AREA_FORMACION_CONTRA.vb" />
+    <Compile Include="entidades\ASISTENCIA_PAGO.vb" />
+    <Compile Include="entidades\ASISTENCIA_PAGO_DET.Partial.vb" />
+    <Compile Include="entidades\ASISTENCIA_PAGO_DET.vb" />
+    <Compile Include="entidades\CALE_FECHA.Partial.vb" />
+    <Compile Include="entidades\CALE_FECHA.vb" />
+    <Compile Include="entidades\CALE_HORARIO.vb" />
+    <Compile Include="entidades\COMPRA_EX_PAGO_ASISTE.vb" />
+    <Compile Include="entidades\CONTRATO_BOLPROS.Partial.vb" />
+    <Compile Include="entidades\CONTRATO_COMPRA.vb" />
+    <Compile Include="entidades\CONTRATO_COMPRA_PENALIZACION.Partial.vb" />
+    <Compile Include="entidades\CONTRATO_COMPRA_PENALIZACION.vb" />
+    <Compile Include="entidades\CONTRATO_COMPRA_PGOACTIVOS.vb" />
+    <Compile Include="entidades\DISCA_SOLIC_PRESELE.vb" />
+    <Compile Include="entidades\FUENTE_MUNICIPIO.vb" />
+    <Compile Include="entidades\GRUPO_SELECCION.vb" />
+    <Compile Include="entidades\INFORME_FINAL_DET.Partial.vb" />
+    <Compile Include="entidades\INFORME_PRESELECCION_EC.vb" />
+    <Compile Include="entidades\INGRESO_MES.vb" />
+    <Compile Include="entidades\MOTIVO_DEJO_ESTU.vb" />
+    <Compile Include="entidades\MOTIVO_DEJO_TRAB.vb" />
+    <Compile Include="entidades\ParticipantesRepetidos.vb" />
+    <Compile Include="entidades\PARTICIPANTE_AF_REPETIDOS.vb" />
+    <Compile Include="entidades\RANGO_PORC_PENA.vb" />
+    <Compile Include="entidades\SIPU_CAPACITACIONES.vb" />
+    <Compile Include="entidades\SIPU_DETALLECAPACITADO.vb" />
+    <Compile Include="entidades\SIPU_GENERACION.vb" />
+    <Compile Include="entidades\SIPU_MUNICIPIO.vb" />
+    <Compile Include="entidades\SIPU_TIPOCAPACITACIONES.vb" />
+    <Compile Include="entidades\SOLICITUD_INSCRIPCION_EC.vb" />
+    <Compile Include="entidades\SOLICITUD_PRESELECCION_EC.vb" />
+    <Compile Include="entidades\SOLIC_PRESELE_CURREC.vb" />
+    <Compile Include="entidades\SOLIC_PRESELE_EMPRE.vb" />
+    <Compile Include="entidades\TIEMPO_NOTRAB.vb" />
+    <Compile Include="entidades\TIPO_ADJUDICACION.vb" />
+    <Compile Include="entidades\TIPO_PENALIZA.vb" />
+    <Compile Include="entidades\TIPO_SELECC.vb" />
+    <Compile Include="entidades\USUARIO.vb" />
+    <Compile Include="entidades\UNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="entidades\TIPO_SOLICITUD.vb" />
+    <Compile Include="entidades\TIPO_PERSONA.vb" />
+    <Compile Include="entidades\SUPERVISION_AF_DET.vb" />
+    <Compile Include="entidades\SUPERVISION_AF.vb" />
+    <Compile Include="entidades\SOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="entidades\SOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="entidades\SOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="entidades\SOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="entidades\SITIO_CAPACITACION.vb" />
+    <Compile Include="entidades\REGION.vb" />
+    <Compile Include="entidades\PROVEEDOR_AF.vb" />
+    <Compile Include="entidades\PROGRAMA_FORMACION.vb" />
+    <Compile Include="entidades\PROCESO.vb" />
+    <Compile Include="entidades\PARTICIPANTE_AF.vb" />
+    <Compile Include="entidades\PARTICIPANTE.vb" />
+    <Compile Include="entidades\OPCION_MENU.vb" />
+    <Compile Include="entidades\OPCION_GRUPO.vb" />
+    <Compile Include="entidades\OFERTA_FORMATIVA.vb" />
+    <Compile Include="entidades\NIVEL_ACADEMICO.vb" />
+    <Compile Include="entidades\MUNICIPIO.vb" />
+    <Compile Include="entidades\MODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="entidades\METODO_EVALUACION.vb" />
+    <Compile Include="entidades\LISTA_SUPERVISION_AF.vb" />
+    <Compile Include="entidades\INFORME_FINAL_DET.vb" />
+    <Compile Include="entidades\INFORME_FINAL_AF.vb" />
+    <Compile Include="entidades\HALLAZGO_SUPERVISION.vb" />
+    <Compile Include="entidades\GRUPO_USUARIO.vb" />
+    <Compile Include="entidades\FACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="entidades\EVALUACIONES_AF_DET.vb" />
+    <Compile Include="entidades\EVALUACION_AF.vb" />
+    <Compile Include="entidades\ETAPA.vb" />
+    <Compile Include="entidades\ESTADO_SOLICITUD.vb" />
+    <Compile Include="entidades\ESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="entidades\EMPRESAS.vb" />
+    <Compile Include="entidades\EJERCICIO.vb" />
+    <Compile Include="entidades\DEPARTAMENTO.vb">
+    </Compile>
+    <Compile Include="entidades\CURSO_TEMA.vb" />
+    <Compile Include="entidades\CONTROL_DOCUMENTOS.vb" />
+    <Compile Include="entidades\CIUU.vb" />
+    <Compile Include="entidades\CIUO.vb" />
+    <Compile Include="entidades\CATCURSO_2.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF_DET.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF.vb" />
+    <Compile Include="entidades\AREA_SUPERVISION.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA.vb" />
+    <Compile Include="entidades\AREA_FORMACION.vb" />
+    <Compile Include="listaBase.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA_PENA.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA_SEGUI.vb" />
+    <Compile Include="listas\ListaACCION_PROGRA_RETRO.vb" />
+    <Compile Include="listas\ListaACCION_VISITAS_SEGUI.vb" />
+    <Compile Include="listas\ListaACTI_ECONOMICA.vb" />
+    <Compile Include="listas\ListaAREA_EMPRESA.vb" />
+    <Compile Include="listas\ListaAREA_FORMACION_CONTRA.vb" />
+    <Compile Include="listas\ListaASISTENCIA_PAGO.vb" />
+    <Compile Include="listas\ListaASISTENCIA_PAGO_DET.vb" />
+    <Compile Include="listas\ListaCALE_FECHA.vb" />
+    <Compile Include="listas\ListaCALE_HORARIO.vb" />
+    <Compile Include="listas\ListaCOMPRA_EX_PAGO_ASISTE.vb" />
+    <Compile Include="listas\ListaCONTRATO_COMPRA.vb" />
+    <Compile Include="listas\ListaCONTRATO_COMPRA_PENALIZACION.vb" />
+    <Compile Include="listas\ListaCONTRATO_COMPRA_PGOACTIVOS.vb" />
+    <Compile Include="listas\ListaDISCA_SOLIC_PRESELE.vb" />
+    <Compile Include="listas\ListaFUENTE_MUNICIPIO.vb" />
+    <Compile Include="listas\ListaGRUPO_SELECCION.vb" />
+    <Compile Include="listas\ListaINFORME_PRESELECCION_EC.vb" />
+    <Compile Include="listas\ListaINGRESO_MES.vb" />
+    <Compile Include="listas\ListaMOTIVO_DEJO_ESTU.vb" />
+    <Compile Include="listas\ListaMOTIVO_DEJO_TRAB.vb" />
+    <Compile Include="listas\ListaRANGO_PORC_PENA.vb" />
+    <Compile Include="listas\ListaSIPU_CAPACITACIONES.vb" />
+    <Compile Include="listas\ListaSIPU_DETALLECAPACITADO.vb" />
+    <Compile Include="listas\ListaSIPU_GENERACION.vb" />
+    <Compile Include="listas\ListaSIPU_MUNICIPIO.vb" />
+    <Compile Include="listas\ListaSIPU_TIPOCAPACITACIONES.vb" />
+    <Compile Include="listas\ListaSOLICITUD_INSCRIPCION_EC.vb" />
+    <Compile Include="listas\ListaSOLICITUD_PRESELECCION_EC.vb" />
+    <Compile Include="listas\ListaSOLIC_PRESELE_CURREC.vb" />
+    <Compile Include="listas\ListaSOLIC_PRESELE_EMPRE.vb" />
+    <Compile Include="listas\ListaTIEMPO_NOTRAB.vb" />
+    <Compile Include="listas\ListaTIPO_ADJUDICACION.vb" />
+    <Compile Include="listas\ListaTIPO_PENALIZA.vb" />
+    <Compile Include="listas\ListaTIPO_SELECC.vb" />
+    <Compile Include="listas\ListaUSUARIO.vb" />
+    <Compile Include="listas\ListaUNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="listas\ListaTIPO_SOLICITUD.vb" />
+    <Compile Include="listas\ListaTIPO_PERSONA.vb" />
+    <Compile Include="listas\ListaSUPERVISION_AF_DET.vb" />
+    <Compile Include="listas\ListaSUPERVISION_AF.vb" />
+    <Compile Include="listas\ListaSOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="listas\ListaSOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="listas\ListaSOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="listas\ListaSOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="listas\ListaSITIO_CAPACITACION.vb" />
+    <Compile Include="listas\ListaREGION.vb" />
+    <Compile Include="listas\ListaPROVEEDOR_AF.vb" />
+    <Compile Include="listas\ListaPROGRAMA_FORMACION.vb" />
+    <Compile Include="listas\ListaPROCESO.vb" />
+    <Compile Include="listas\ListaPARTICIPANTE_AF.vb" />
+    <Compile Include="listas\ListaPARTICIPANTE.vb" />
+    <Compile Include="listas\ListaOPCION_MENU.vb" />
+    <Compile Include="listas\ListaOPCION_GRUPO.vb" />
+    <Compile Include="listas\ListaOFERTA_FORMATIVA.vb" />
+    <Compile Include="listas\ListaNIVEL_ACADEMICO.vb" />
+    <Compile Include="listas\ListaMUNICIPIO.vb" />
+    <Compile Include="listas\ListaMODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="listas\ListaMETODO_EVALUACION.vb" />
+    <Compile Include="listas\ListaLISTA_SUPERVISION_AF.vb" />
+    <Compile Include="listas\ListaINFORME_FINAL_DET.vb" />
+    <Compile Include="listas\ListaINFORME_FINAL_AF.vb" />
+    <Compile Include="listas\ListaHALLAZGO_SUPERVISION.vb" />
+    <Compile Include="listas\ListaGRUPO_USUARIO.vb" />
+    <Compile Include="listas\ListaFACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="listas\ListaEVALUACIONES_AF_DET.vb" />
+    <Compile Include="listas\ListaEVALUACION_AF.vb" />
+    <Compile Include="listas\ListaETAPA.vb" />
+    <Compile Include="listas\ListaESTADO_SOLICITUD.vb" />
+    <Compile Include="listas\ListaESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="listas\ListaEMPRESAS.vb" />
+    <Compile Include="listas\ListaEJERCICIO.vb" />
+    <Compile Include="listas\ListaDEPARTAMENTO.vb" />
+    <Compile Include="listas\ListaCURSO_TEMA.vb" />
+    <Compile Include="listas\ListaCONTROL_DOCUMENTOS.vb" />
+    <Compile Include="listas\ListaCIUU.vb" />
+    <Compile Include="listas\ListaCIUO.vb" />
+    <Compile Include="listas\ListaCATCURSO_2.vb" />
+    <Compile Include="listas\ListaASISTENCIA_AF_DET.vb" />
+    <Compile Include="listas\ListaASISTENCIA_AF.vb" />
+    <Compile Include="listas\ListaAREA_SUPERVISION.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA.vb" />
+    <Compile Include="listas\ListaAREA_FORMACION.vb" />
+    <Compile Include="Utilerias.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="entidades\ACCION_CONTRATADA.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_DETALLE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\ACCION_FORMATIVA_HIST.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_PATI.vb" />
+    <Compile Include="entidades\ACCION_FORMATIVA_REPROG.vb" />
+    <Compile Include="entidades\ACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF.Partial.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF_DET.Partial.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF_HORARIO.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF_HORARIO_REPROG.vb" />
+    <Compile Include="entidades\ASISTENCIA_AF_REPROG.vb" />
+    <Compile Include="entidades\CENTRO_RESPONSABILIDAD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\CENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\COMPROMISO_AF.vb" />
+    <Compile Include="entidades\COMPROMISO_CONTRATO.vb" />
+    <Compile Include="entidades\CONTRATO_BOLPROS.vb" />
+    <Compile Include="entidades\CONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="entidades\CONTRATO_SUB_AREA_FORMACION.vb" />
+    <Compile Include="entidades\DESEMBOLSO.Partial.vb" />
+    <Compile Include="entidades\DESEMBOLSO.vb" />
+    <Compile Include="entidades\DESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="entidades\DISCAPACIDAD.vb" />
+    <Compile Include="entidades\DISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="entidades\DISCA_POR_SOLICITUD.vb" />
+    <Compile Include="entidades\EDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="entidades\ESTADO_CIVIL.vb" />
+    <Compile Include="entidades\ESTADO_INFORME_AF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\ESTADO_REPROG.vb" />
+    <Compile Include="entidades\FACTURA_AF.Partial.vb" />
+    <Compile Include="entidades\FACTURA_AF.vb" />
+    <Compile Include="entidades\FACTURA_DET.vb" />
+    <Compile Include="entidades\FASE.vb" />
+    <Compile Include="entidades\FASE_ESTADO_INFORME.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\FASE_MUNICIPIOS.vb" />
+    <Compile Include="entidades\FUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="entidades\GRUPO_ACCION_CONTRATADA.vb" />
+    <Compile Include="entidades\GRUPO_SOLICITUD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\INFORME_FINAL_AF_HIS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\OFERTA_FORMATIVA.Partial.vb" />
+    <Compile Include="entidades\OFERTA_FORMATIVA_DEPTO.vb" />
+    <Compile Include="entidades\OFERTA_FORMATIVA_SITIO.vb" />
+    <Compile Include="entidades\PAIS.vb" />
+    <Compile Include="entidades\PAQUETE_INFORME.vb" />
+    <Compile Include="entidades\PAQUETE_INFORME_DET.vb" />
+    <Compile Include="entidades\PARTICIPANTE.Partial.vb" />
+    <Compile Include="entidades\PARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="entidades\PROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\PROYECTO_FORMACION.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\REFERENCIA.vb" />
+    <Compile Include="entidades\REFERENTE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\ROL_PROGRAMA.vb" />
+    <Compile Include="entidades\SITIO_CAPACITACION.Partial.vb" />
+    <Compile Include="entidades\SITIO_CAPACITACION_EJERCICIO.vb" />
+    <Compile Include="entidades\SOLICITUD_CAPACITACION.Partial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\SOLICITUD_CAPACITACION.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="entidades\SOLICITUD_INSCRIPCION_AF.Partial.vb" />
+    <Compile Include="entidades\SOLICITUD_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="entidades\SOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="entidades\SUB_AREA_FORMACION.vb" />
+    <Compile Include="entidades\TECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="entidades\TERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="entidades\TIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="entidades\TIPO_CONTRATACION.vb" />
+    <Compile Include="entidades\TIPO_EMPLEO.vb" />
+    <Compile Include="listas\ListaACCION_CONTRATADA.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA_DETALLE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaACCION_FORMATIVA_HIST.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA_PATI.vb" />
+    <Compile Include="listas\ListaACCION_FORMATIVA_REPROG.vb" />
+    <Compile Include="listas\ListaACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="listas\ListaASISTENCIA_AF_HORARIO.vb" />
+    <Compile Include="listas\ListaASISTENCIA_AF_HORARIO_REPROG.vb" />
+    <Compile Include="listas\ListaASISTENCIA_AF_REPROG.vb" />
+    <Compile Include="listas\ListaCENTRO_RESPONSABILIDAD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaCOMPROMISO_AF.vb" />
+    <Compile Include="listas\ListaCOMPROMISO_CONTRATO.vb" />
+    <Compile Include="listas\ListaCONTRATO_BOLPROS.vb" />
+    <Compile Include="listas\ListaCONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="listas\ListaCONTRATO_SUB_AREA_FORMACION.vb" />
+    <Compile Include="listas\ListaDESEMBOLSO.vb" />
+    <Compile Include="listas\ListaDESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="listas\ListaDISCAPACIDAD.vb" />
+    <Compile Include="listas\ListaDISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="listas\ListaDISCA_POR_SOLICITUD.vb" />
+    <Compile Include="listas\ListaEDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="listas\ListaESTADO_CIVIL.vb" />
+    <Compile Include="listas\ListaESTADO_INFORME_AF.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaESTADO_REPROG.vb" />
+    <Compile Include="listas\ListaFACTURA_AF.vb" />
+    <Compile Include="listas\ListaFACTURA_DET.vb" />
+    <Compile Include="listas\ListaFASE.vb" />
+    <Compile Include="listas\ListaFASE_ESTADO_INFORME.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaFASE_MUNICIPIOS.vb" />
+    <Compile Include="listas\ListaFUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="listas\ListaGRUPO_ACCION_CONTRATADA.vb" />
+    <Compile Include="listas\ListaGRUPO_SOLICITUD.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaINFORME_FINAL_AF_HIS.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaMUNICIPIO_CONVOCATORIA.vb" />
+    <Compile Include="listas\ListaMUNICIPIO_LIQUIDACION.vb" />
+    <Compile Include="listas\ListaMUNICIPIO_LIQUIDACION_DET.vb" />
+    <Compile Include="listas\ListaOFERTA_FORMATIVA_DEPTO.vb" />
+    <Compile Include="listas\ListaOFERTA_FORMATIVA_SITIO.vb" />
+    <Compile Include="listas\ListaPAIS.vb" />
+    <Compile Include="listas\ListaPAQUETE_INFORME.vb" />
+    <Compile Include="listas\ListaPAQUETE_INFORME_DET.vb" />
+    <Compile Include="listas\ListaPARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="listas\ListaPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaPROYECTO_FORMACION.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaREFERENCIA.vb" />
+    <Compile Include="listas\ListaREFERENTE.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaROL_PROGRAMA.vb" />
+    <Compile Include="listas\ListaSITIO_CAPACITACION_EJERCICIO.vb" />
+    <Compile Include="listas\ListaSOLICITUD_CAPACITACION.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="listas\ListaSOLICITUD_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="listas\ListaSOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="listas\ListaSUB_AREA_FORMACION.vb" />
+    <Compile Include="listas\ListaTECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="listas\ListaTERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="listas\ListaTIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="listas\ListaTIPO_CONTRATACION.vb" />
+    <Compile Include="listas\ListaTIPO_EMPLEO.vb" />
+    <Compile Include="entidades\MUNICIPIO_CONVOCATORIA.vb" />
+    <Compile Include="entidades\MUNICIPIO_LIQUIDACION.vb" />
+    <Compile Include="entidades\MUNICIPIO_LIQUIDACION_DET.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

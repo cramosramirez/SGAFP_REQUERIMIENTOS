@@ -1,0 +1,3671 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5866BBB-0B51-44B4-8ABE-81D34265CB1F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SGAFP.My.MyApplication</StartupObject>
+    <RootNamespace>SGAFP</RootNamespace>
+    <AssemblyName>SGAFP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>0325D8BEACAC44AB68AF08BEE3B2045F2849EA86</ManifestCertificateThumbprint>
+    <ManifestKeyFile>SGAFPWin_2_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <ApplicationIcon>vcard.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>C:\BD\Publicacion\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.1.244/SGAFP/</InstallUrl>
+    <ProductName>Sistema de Gestión y Administración de la Formación Profesional</ProductName>
+    <PublisherName>INSAFORP</PublisherName>
+    <SuiteName>SGAFP</SuiteName>
+    <MinimumRequiredVersion>1.3.1.118</MinimumRequiredVersion>
+    <ApplicationRevision>119</ApplicationRevision>
+    <ApplicationVersion>1.3.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.OfficeSkins.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.1.UI, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Reports.v11.1.Designer, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1.Extensions, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v11.1.Reporting.Extensions, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v11.1.Reporting, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=3be8f9b49837ebfd">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data.OdbcHelper">
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\Microsoft.ApplicationBlocks.Data.OdbcHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data.OracleClient, Version=2.0.0.0, Culture=neutral, PublicKeyToken=f6f5017b0e8e1912">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.Data.OracleClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=2.0.0.0, Culture=neutral, PublicKeyToken=090ce9b8f6fec061">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6c16cc115e2b4c18">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.ExceptionManagement.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio 11.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="PATI_BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\sambarh\UTI\Desarrollo\PATI\dlls\PATI_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="PATI_DL">
+      <HintPath>\\192.168.1.159\gti\Desarrollo\PATI\dlls\PATI_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="PATI_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\sambarh\UTI\Desarrollo\PATI\dlls\PATI_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.1\uti\Desarrollo\SIFP\DLLs\SIFP_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_DL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.1\uti\Desarrollo\SIFP\DLLs\SIFP_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.1\uti\Desarrollo\SIFP\DLLs\SIFP_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLMembershipProvider_BL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SQLMembershipProvider_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLMembershipProvider_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SQLMembershipProvider_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="SGAFP.BL" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CentrosFormacion\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CentrosFormacion\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CentrosFormacion\frmAsignacionCentro_Tecnico.Designer.vb">
+      <DependentUpon>frmAsignacionCentro_Tecnico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CentrosFormacion\frmAsignacionCentro_Tecnico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\frmConsultarCursos.Designer.vb">
+      <DependentUpon>frmConsultarCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultarCursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="controles\ucBaseBusqueda.Designer.vb">
+      <DependentUpon>ucBaseBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBaseBusqueda.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBaseDetalleMant.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBaseLista.Designer.vb">
+      <DependentUpon>ucBaseLista.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBaseLista.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBaseMant.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBaseWin.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucBuscarACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucBuscarACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_FORMATIVA_DETALLE.Designer.vb">
+      <DependentUpon>ucBuscarACCION_FORMATIVA_DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarACCION_FORMATIVA_DETALLE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarAREA_FORMACION.Designer.vb">
+      <DependentUpon>ucBuscarAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarAREA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarAREA_SUPERVISION.Designer.vb">
+      <DependentUpon>ucBuscarAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarAREA_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarASISTENCIA_AF.Designer.vb">
+      <DependentUpon>ucBuscarASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarASISTENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarASISTENCIA_AF_DET.Designer.vb">
+      <DependentUpon>ucBuscarASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarASISTENCIA_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCATCURSO_2.Designer.vb">
+      <DependentUpon>ucBuscarCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCATCURSO_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCENTRO_RESPONSABILIDAD.Designer.vb">
+      <DependentUpon>ucBuscarCENTRO_RESPONSABILIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCENTRO_RESPONSABILIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCENTRO_RESPONSABILIDAD_UNIDAD.Designer.vb">
+      <DependentUpon>ucBuscarCENTRO_RESPONSABILIDAD_UNIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCIUO.Designer.vb">
+      <DependentUpon>ucBuscarCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCIUO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCIUU.Designer.vb">
+      <DependentUpon>ucBuscarCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCIUU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTRATO_BOLPROS.Designer.vb">
+      <DependentUpon>ucBuscarCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTRATO_BOLPROS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTRATO_PROVEEDOR_AF.Designer.vb">
+      <DependentUpon>ucBuscarCONTRATO_PROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTROL_DOCUMENTOS.Designer.vb">
+      <DependentUpon>ucBuscarCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCONTROL_DOCUMENTOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarCURSO_TEMA.Designer.vb">
+      <DependentUpon>ucBuscarCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarCURSO_TEMA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarDEPARTAMENTO.Designer.vb">
+      <DependentUpon>ucBuscarDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarDEPARTAMENTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarEJERCICIO.Designer.vb">
+      <DependentUpon>ucBuscarEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarEJERCICIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarEMPRESAS.Designer.vb">
+      <DependentUpon>ucBuscarEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarEMPRESAS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarESTADO_ACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucBuscarESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarESTADO_ACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarESTADO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucBuscarESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarESTADO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarETAPA.Designer.vb">
+      <DependentUpon>ucBuscarETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarETAPA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarEVALUACIONES_AF_DET.Designer.vb">
+      <DependentUpon>ucBuscarEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarEVALUACIONES_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarEVALUACION_AF.Designer.vb">
+      <DependentUpon>ucBuscarEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarEVALUACION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarFACILITADOR_CAPACITADOR.Designer.vb">
+      <DependentUpon>ucBuscarFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarFACILITADOR_CAPACITADOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_ACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucBuscarGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucBuscarGRUPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_USUARIO.Designer.vb">
+      <DependentUpon>ucBuscarGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarGRUPO_USUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarHALLAZGO_SUPERVISION.Designer.vb">
+      <DependentUpon>ucBuscarHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarHALLAZGO_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarINFORME_FINAL_AF.Designer.vb">
+      <DependentUpon>ucBuscarINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarINFORME_FINAL_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarINFORME_FINAL_DET.Designer.vb">
+      <DependentUpon>ucBuscarINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarINFORME_FINAL_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarLISTA_SUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucBuscarLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarLISTA_SUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarMETODO_EVALUACION.Designer.vb">
+      <DependentUpon>ucBuscarMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarMETODO_EVALUACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarMODALIDAD_DE_FORMACION.Designer.vb">
+      <DependentUpon>ucBuscarMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarMODALIDAD_DE_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarMUNICIPIO.Designer.vb">
+      <DependentUpon>ucBuscarMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarMUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarNIVEL_ACADEMICO.Designer.vb">
+      <DependentUpon>ucBuscarNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarNIVEL_ACADEMICO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarOFERTA_FORMATIVA.Designer.vb">
+      <DependentUpon>ucBuscarOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarOFERTA_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarOPCION_GRUPO.Designer.vb">
+      <DependentUpon>ucBuscarOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarOPCION_GRUPO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarOPCION_MENU.Designer.vb">
+      <DependentUpon>ucBuscarOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarOPCION_MENU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPARTICIPANTE.Designer.vb">
+      <DependentUpon>ucBuscarPARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPARTICIPANTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPARTICIPANTE_AF.Designer.vb">
+      <DependentUpon>ucBuscarPARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPARTICIPANTE_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROCESO.Designer.vb">
+      <DependentUpon>ucBuscarPROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROCESO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROGRAMA_FORMACION.Designer.vb">
+      <DependentUpon>ucBuscarPROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROGRAMA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROGRAMA_FORMACION_TIPOPAGO.Designer.vb">
+      <DependentUpon>ucBuscarPROGRAMA_FORMACION_TIPOPAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROVEEDOR_AF.Designer.vb">
+      <DependentUpon>ucBuscarPROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROYECTO_FORMACION.Designer.vb">
+      <DependentUpon>ucBuscarPROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarPROYECTO_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarREFERENTE.Designer.vb">
+      <DependentUpon>ucBuscarREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarREFERENTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarREGION.Designer.vb">
+      <DependentUpon>ucBuscarREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarREGION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_CAPACITACIONES.Designer.vb">
+      <DependentUpon>ucBuscarSIPU_CAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_CAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_DETALLECAPACITACIONES.Designer.vb">
+      <DependentUpon>ucBuscarSIPU_DETALLECAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_GENERACION.Designer.vb">
+      <DependentUpon>ucBuscarSIPU_GENERACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_GENERACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_MUNICIPIO.Designer.vb">
+      <DependentUpon>ucBuscarSIPU_MUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_MUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_TIPOCAPACITACIONES.Designer.vb">
+      <DependentUpon>ucBuscarSIPU_TIPOCAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSITIO_CAPACITACION.Designer.vb">
+      <DependentUpon>ucBuscarSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSITIO_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLICITUD_CAPACITACION.designer.vb">
+      <DependentUpon>ucBuscarSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLICITUD_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLICITUD_INSCRIPCION_AF.Designer.vb">
+      <DependentUpon>ucBuscarSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_CURSOS_RECIBIDOS.Designer.vb">
+      <DependentUpon>ucBuscarSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_EMPLEO_ACTUAL.Designer.vb">
+      <DependentUpon>ucBuscarSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_EMPLEO_ANTERIOR.Designer.vb">
+      <DependentUpon>ucBuscarSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucBuscarSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarSUPERVISION_AF_DET.Designer.vb">
+      <DependentUpon>ucBuscarSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarSUPERVISION_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarTERMINO_REFERENCIA_AF.designer.vb">
+      <DependentUpon>ucBuscarTERMINO_REFERENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarTERMINO_REFERENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_CONTRATACION.Designer.vb">
+      <DependentUpon>ucBuscarTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_CONTRATACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_PERSONA.Designer.vb">
+      <DependentUpon>ucBuscarTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_PERSONA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucBuscarTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarTIPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarUNIDAD_ORGANIZATIVA.Designer.vb">
+      <DependentUpon>ucBuscarUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarUNIDAD_ORGANIZATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucBuscarUSUARIO.Designer.vb">
+      <DependentUpon>ucBuscarUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucBuscarUSUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucCalendarioDeCursos.Designer.vb">
+      <DependentUpon>ucCalendarioDeCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucCalendarioDeCursos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucDetalleACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucDetalleACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_FORMATIVA_DETALLE.designer.vb">
+      <DependentUpon>ucDetalleACCION_FORMATIVA_DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleACCION_FORMATIVA_DETALLE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleAREA_FORMACION.Designer.vb">
+      <DependentUpon>ucDetalleAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleAREA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleAREA_SUPERVISION.Designer.vb">
+      <DependentUpon>ucDetalleAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleAREA_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleASISTENCIA_AF.Designer.vb">
+      <DependentUpon>ucDetalleASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleASISTENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleASISTENCIA_AF_DET.Designer.vb">
+      <DependentUpon>ucDetalleASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleASISTENCIA_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCATCURSO_2.Designer.vb">
+      <DependentUpon>ucDetalleCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCATCURSO_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCENTRO_RESPONSABILIDAD.designer.vb">
+      <DependentUpon>ucDetalleCENTRO_RESPONSABILIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCENTRO_RESPONSABILIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCENTRO_RESPONSABILIDAD_UNIDAD.designer.vb">
+      <DependentUpon>ucDetalleCENTRO_RESPONSABILIDAD_UNIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCIUO.Designer.vb">
+      <DependentUpon>ucDetalleCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCIUO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCIUU.Designer.vb">
+      <DependentUpon>ucDetalleCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCIUU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_BOLPROS.Designer.vb">
+      <DependentUpon>ucDetalleCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_BOLPROS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_COMPRA.designer.vb">
+      <DependentUpon>ucDetalleCONTRATO_COMPRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_COMPRA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_PROVEEDOR_AF.designer.vb">
+      <DependentUpon>ucDetalleCONTRATO_PROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTROL_DOCUMENTOS.Designer.vb">
+      <DependentUpon>ucDetalleCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCONTROL_DOCUMENTOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleCURSO_TEMA.Designer.vb">
+      <DependentUpon>ucDetalleCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleCURSO_TEMA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleDEPARTAMENTO.Designer.vb">
+      <DependentUpon>ucDetalleDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleDEPARTAMENTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleEJERCICIO.Designer.vb">
+      <DependentUpon>ucDetalleEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleEJERCICIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleEMPRESAS.Designer.vb">
+      <DependentUpon>ucDetalleEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleEMPRESAS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleESTADO_ACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucDetalleESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleESTADO_ACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleESTADO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucDetalleESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleESTADO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleETAPA.Designer.vb">
+      <DependentUpon>ucDetalleETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleETAPA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleEVALUACIONES_AF_DET.Designer.vb">
+      <DependentUpon>ucDetalleEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleEVALUACIONES_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleEVALUACION_AF.Designer.vb">
+      <DependentUpon>ucDetalleEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleEVALUACION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleFACILITADOR_CAPACITADOR.Designer.vb">
+      <DependentUpon>ucDetalleFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleFACILITADOR_CAPACITADOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_ACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucDetalleGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_SOLICITUD.designer.vb">
+      <DependentUpon>ucDetalleGRUPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_USUARIO.Designer.vb">
+      <DependentUpon>ucDetalleGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleGRUPO_USUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleHALLAZGO_SUPERVISION.Designer.vb">
+      <DependentUpon>ucDetalleHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleHALLAZGO_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleINFORME_FINAL_AF.Designer.vb">
+      <DependentUpon>ucDetalleINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleINFORME_FINAL_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleINFORME_FINAL_DET.Designer.vb">
+      <DependentUpon>ucDetalleINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleINFORME_FINAL_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleLISTA_SUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucDetalleLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleLISTA_SUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleListViewCriterios.Designer.vb">
+      <DependentUpon>ucDetalleListViewCriterios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleListViewCriterios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleMETODO_EVALUACION.Designer.vb">
+      <DependentUpon>ucDetalleMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleMETODO_EVALUACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleMODALIDAD_DE_FORMACION.Designer.vb">
+      <DependentUpon>ucDetalleMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleMODALIDAD_DE_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleMUNICIPIO.Designer.vb">
+      <DependentUpon>ucDetalleMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleMUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleNIVEL_ACADEMICO.Designer.vb">
+      <DependentUpon>ucDetalleNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleNIVEL_ACADEMICO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleOFERTA_FORMATIVA.Designer.vb">
+      <DependentUpon>ucDetalleOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleOFERTA_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleOPCION_GRUPO.Designer.vb">
+      <DependentUpon>ucDetalleOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleOPCION_GRUPO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleOPCION_MENU.Designer.vb">
+      <DependentUpon>ucDetalleOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleOPCION_MENU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePARTICIPANTE.Designer.vb">
+      <DependentUpon>ucDetallePARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePARTICIPANTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePARTICIPANTE_AF.Designer.vb">
+      <DependentUpon>ucDetallePARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePARTICIPANTE_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePROCESO.Designer.vb">
+      <DependentUpon>ucDetallePROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePROCESO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePROGRAMA_FORMACION.Designer.vb">
+      <DependentUpon>ucDetallePROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePROGRAMA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePROGRAMA_FORMACION_TIPOPAGO.designer.vb">
+      <DependentUpon>ucDetallePROGRAMA_FORMACION_TIPOPAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePROVEEDOR_AF.Designer.vb">
+      <DependentUpon>ucDetallePROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetallePROYECTO_FORMACION.designer.vb">
+      <DependentUpon>ucDetallePROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetallePROYECTO_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleREFERENTE.designer.vb">
+      <DependentUpon>ucDetalleREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleREFERENTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleREGION.Designer.vb">
+      <DependentUpon>ucDetalleREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleREGION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_CAPACITACIONES.Designer.vb">
+      <DependentUpon>ucDetalleSIPU_CAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_CAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_DETALLECAPACITACIONES.Designer.vb">
+      <DependentUpon>ucDetalleSIPU_DETALLECAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_GENERACION.Designer.vb">
+      <DependentUpon>ucDetalleSIPU_GENERACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_GENERACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_MUNICIPIO.Designer.vb">
+      <DependentUpon>ucDetalleSIPU_MUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_MUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_TIPOCAPACITACIONES.Designer.vb">
+      <DependentUpon>ucDetalleSIPU_TIPOCAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSITIO_CAPACITACION.Designer.vb">
+      <DependentUpon>ucDetalleSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSITIO_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLICITUD_CAPACITACION.designer.vb">
+      <DependentUpon>ucDetalleSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLICITUD_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLICITUD_INSCRIPCION_AF.Designer.vb">
+      <DependentUpon>ucDetalleSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_CURSOS_RECIBIDOS.Designer.vb">
+      <DependentUpon>ucDetalleSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_EMPLEO_ACTUAL.Designer.vb">
+      <DependentUpon>ucDetalleSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_EMPLEO_ANTERIOR.Designer.vb">
+      <DependentUpon>ucDetalleSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucDetalleSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleSUPERVISION_AF_DET.Designer.vb">
+      <DependentUpon>ucDetalleSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleSUPERVISION_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleTERMINO_REFERENCIA_AF.designer.vb">
+      <DependentUpon>ucDetalleTERMINO_REFERENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleTERMINO_REFERENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_CONTRATACION.Designer.vb">
+      <DependentUpon>ucDetalleTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_CONTRATACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_PERSONA.Designer.vb">
+      <DependentUpon>ucDetalleTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_PERSONA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucDetalleTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleTIPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleUNIDAD_ORGANIZATIVA.Designer.vb">
+      <DependentUpon>ucDetalleUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleUNIDAD_ORGANIZATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucDetalleUSUARIO.Designer.vb">
+      <DependentUpon>ucDetalleUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucDetalleUSUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucListaACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucListaACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_FORMATIVA_DETALLE.designer.vb">
+      <DependentUpon>ucListaACCION_FORMATIVA_DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaACCION_FORMATIVA_DETALLE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaAREA_FORMACION.Designer.vb">
+      <DependentUpon>ucListaAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaAREA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaAREA_SUPERVISION.Designer.vb">
+      <DependentUpon>ucListaAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaAREA_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaASISTENCIA_AF.Designer.vb">
+      <DependentUpon>ucListaASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaASISTENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaASISTENCIA_AF_DET.Designer.vb">
+      <DependentUpon>ucListaASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaASISTENCIA_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCATCURSO_2.Designer.vb">
+      <DependentUpon>ucListaCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCATCURSO_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCENTRO_RESPONSABILIDAD.designer.vb">
+      <DependentUpon>ucListaCENTRO_RESPONSABILIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCENTRO_RESPONSABILIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCENTRO_RESPONSABILIDAD_UNIDAD.designer.vb">
+      <DependentUpon>ucListaCENTRO_RESPONSABILIDAD_UNIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCIUO.Designer.vb">
+      <DependentUpon>ucListaCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCIUO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCIUU.Designer.vb">
+      <DependentUpon>ucListaCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCIUU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_BOLPROS.Designer.vb">
+      <DependentUpon>ucListaCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_BOLPROS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_COMPRA.Designer.vb">
+      <DependentUpon>ucListaCONTRATO_COMPRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_COMPRA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_PROVEEDOR_AF.designer.vb">
+      <DependentUpon>ucListaCONTRATO_PROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCONTROL_DOCUMENTOS.Designer.vb">
+      <DependentUpon>ucListaCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCONTROL_DOCUMENTOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaCURSO_TEMA.Designer.vb">
+      <DependentUpon>ucListaCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaCURSO_TEMA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaDEPARTAMENTO.Designer.vb">
+      <DependentUpon>ucListaDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaDEPARTAMENTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaEJERCICIO.Designer.vb">
+      <DependentUpon>ucListaEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaEJERCICIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaEMPRESAS.Designer.vb">
+      <DependentUpon>ucListaEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaEMPRESAS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaESTADO_ACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucListaESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaESTADO_ACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaESTADO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucListaESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaESTADO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaETAPA.Designer.vb">
+      <DependentUpon>ucListaETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaETAPA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaEVALUACIONES_AF_DET.Designer.vb">
+      <DependentUpon>ucListaEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaEVALUACIONES_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaEVALUACION_AF.Designer.vb">
+      <DependentUpon>ucListaEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaEVALUACION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaFACILITADOR_CAPACITADOR.Designer.vb">
+      <DependentUpon>ucListaFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaFACILITADOR_CAPACITADOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_ACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucListaGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_SOLICITUD.designer.vb">
+      <DependentUpon>ucListaGRUPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_USUARIO.Designer.vb">
+      <DependentUpon>ucListaGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaGRUPO_USUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaHALLAZGO_SUPERVISION.Designer.vb">
+      <DependentUpon>ucListaHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaHALLAZGO_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaINFORME_FINAL_AF.Designer.vb">
+      <DependentUpon>ucListaINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaINFORME_FINAL_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaINFORME_FINAL_DET.Designer.vb">
+      <DependentUpon>ucListaINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaINFORME_FINAL_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaLISTA_SUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucListaLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaLISTA_SUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaMETODO_EVALUACION.Designer.vb">
+      <DependentUpon>ucListaMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaMETODO_EVALUACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaMODALIDAD_DE_FORMACION.Designer.vb">
+      <DependentUpon>ucListaMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaMODALIDAD_DE_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaMUNICIPIO.Designer.vb">
+      <DependentUpon>ucListaMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaMUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaNIVEL_ACADEMICO.Designer.vb">
+      <DependentUpon>ucListaNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaNIVEL_ACADEMICO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaOFERTA_FORMATIVA.Designer.vb">
+      <DependentUpon>ucListaOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaOFERTA_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaOPCION_GRUPO.Designer.vb">
+      <DependentUpon>ucListaOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaOPCION_GRUPO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaOPCION_MENU.Designer.vb">
+      <DependentUpon>ucListaOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaOPCION_MENU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPARTICIPANTE.Designer.vb">
+      <DependentUpon>ucListaPARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPARTICIPANTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPARTICIPANTE_AF.Designer.vb">
+      <DependentUpon>ucListaPARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPARTICIPANTE_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPROCESO.Designer.vb">
+      <DependentUpon>ucListaPROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPROCESO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPROGRAMA_FORMACION.Designer.vb">
+      <DependentUpon>ucListaPROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPROGRAMA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPROGRAMA_FORMACION_TIPOPAGO.designer.vb">
+      <DependentUpon>ucListaPROGRAMA_FORMACION_TIPOPAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPROVEEDOR_AF.Designer.vb">
+      <DependentUpon>ucListaPROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaPROYECTO_FORMACION.designer.vb">
+      <DependentUpon>ucListaPROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaPROYECTO_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaREFERENTE.designer.vb">
+      <DependentUpon>ucListaREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaREFERENTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaREGION.Designer.vb">
+      <DependentUpon>ucListaREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaREGION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSIPU_CAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucListaSIPU_CAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSIPU_DETALLECAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucListaSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSIPU_GENERACION.Designer.vb" />
+    <Compile Include="controles\ucListaSIPU_GENERACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSIPU_MUNICIPIO.Designer.vb" />
+    <Compile Include="controles\ucListaSIPU_MUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSIPU_TIPOCAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucListaSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSITIO_CAPACITACION.Designer.vb">
+      <DependentUpon>ucListaSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSITIO_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSOLICITUD_CAPACITACION.designer.vb">
+      <DependentUpon>ucListaSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSOLICITUD_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSOLICITUD_INSCRIPCION_AF.Designer.vb">
+      <DependentUpon>ucListaSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_CURSOS_RECIBIDOS.Designer.vb">
+      <DependentUpon>ucListaSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_EMPLEO_ACTUAL.Designer.vb">
+      <DependentUpon>ucListaSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_EMPLEO_ANTERIOR.Designer.vb">
+      <DependentUpon>ucListaSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucListaSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaSUPERVISION_AF_DET.Designer.vb">
+      <DependentUpon>ucListaSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaSUPERVISION_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaTERMINO_REFERENCIA_AF.designer.vb">
+      <DependentUpon>ucListaTERMINO_REFERENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaTERMINO_REFERENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_CONTRATACION.Designer.vb">
+      <DependentUpon>ucListaTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_CONTRATACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_PERSONA.Designer.vb">
+      <DependentUpon>ucListaTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_PERSONA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucListaTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaTIPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaUNIDAD_ORGANIZATIVA.Designer.vb">
+      <DependentUpon>ucListaUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaUNIDAD_ORGANIZATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListaUSUARIO.Designer.vb">
+      <DependentUpon>ucListaUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListaUSUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucListViewCriterios.Designer.vb">
+      <DependentUpon>ucListViewCriterios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucListViewCriterios.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucMantACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucMantACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_FORMATIVA_DETALLE.designer.vb">
+      <DependentUpon>ucMantACCION_FORMATIVA_DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantACCION_FORMATIVA_DETALLE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantAREA_FORMACION.Designer.vb">
+      <DependentUpon>ucMantAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantAREA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantAREA_SUPERVISION.Designer.vb">
+      <DependentUpon>ucMantAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantAREA_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantASISTENCIA_AF.Designer.vb">
+      <DependentUpon>ucMantASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantASISTENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantASISTENCIA_AF_DET.Designer.vb">
+      <DependentUpon>ucMantASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantASISTENCIA_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCATCURSO_2.Designer.vb">
+      <DependentUpon>ucMantCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCATCURSO_2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCENTRO_RESPONSABILIDAD.designer.vb">
+      <DependentUpon>ucMantCENTRO_RESPONSABILIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCENTRO_RESPONSABILIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCENTRO_RESPONSABILIDAD_UNIDAD.designer.vb">
+      <DependentUpon>ucMantCENTRO_RESPONSABILIDAD_UNIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCIUO.Designer.vb">
+      <DependentUpon>ucMantCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCIUO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCIUU.Designer.vb">
+      <DependentUpon>ucMantCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCIUU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_BOLPROS.Designer.vb">
+      <DependentUpon>ucMantCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_BOLPROS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_COMPRA.Designer.vb">
+      <DependentUpon>ucMantCONTRATO_COMPRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_COMPRA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_PROVEEDOR_AF.designer.vb">
+      <DependentUpon>ucMantCONTRATO_PROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCONTROL_DOCUMENTOS.Designer.vb">
+      <DependentUpon>ucMantCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCONTROL_DOCUMENTOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantCURSO_TEMA.Designer.vb">
+      <DependentUpon>ucMantCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantCURSO_TEMA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantDEPARTAMENTO.Designer.vb">
+      <DependentUpon>ucMantDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantDEPARTAMENTO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantEJERCICIO.Designer.vb">
+      <DependentUpon>ucMantEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantEJERCICIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantEMPRESAS.Designer.vb">
+      <DependentUpon>ucMantEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantEMPRESAS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantESTADO_ACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>ucMantESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantESTADO_ACCION_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantESTADO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucMantESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantESTADO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantETAPA.Designer.vb">
+      <DependentUpon>ucMantETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantETAPA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantEVALUACIONES_AF_DET.Designer.vb">
+      <DependentUpon>ucMantEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantEVALUACIONES_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantEVALUACION_AF.Designer.vb">
+      <DependentUpon>ucMantEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantEVALUACION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantFACILITADOR_CAPACITADOR.Designer.vb">
+      <DependentUpon>ucMantFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantFACILITADOR_CAPACITADOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_ACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>ucMantGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_SOLICITUD.designer.vb">
+      <DependentUpon>ucMantGRUPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_USUARIO.Designer.vb">
+      <DependentUpon>ucMantGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantGRUPO_USUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantHALLAZGO_SUPERVISION.Designer.vb">
+      <DependentUpon>ucMantHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantHALLAZGO_SUPERVISION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantINFORME_FINAL_AF.Designer.vb">
+      <DependentUpon>ucMantINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantINFORME_FINAL_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantINFORME_FINAL_DET.Designer.vb">
+      <DependentUpon>ucMantINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantINFORME_FINAL_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantLISTA_SUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucMantLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantLISTA_SUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantMETODO_EVALUACION.Designer.vb">
+      <DependentUpon>ucMantMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantMETODO_EVALUACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantMODALIDAD_DE_FORMACION.Designer.vb">
+      <DependentUpon>ucMantMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantMODALIDAD_DE_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantMUNICIPIO.Designer.vb">
+      <DependentUpon>ucMantMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantMUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantNIVEL_ACADEMICO.Designer.vb">
+      <DependentUpon>ucMantNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantNIVEL_ACADEMICO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantOFERTA_FORMATIVA.Designer.vb">
+      <DependentUpon>ucMantOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantOFERTA_FORMATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantOPCION_GRUPO.Designer.vb">
+      <DependentUpon>ucMantOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantOPCION_GRUPO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantOPCION_MENU.Designer.vb">
+      <DependentUpon>ucMantOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantOPCION_MENU.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE.Designer.vb">
+      <DependentUpon>ucMantPARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE_AF.Designer.vb">
+      <DependentUpon>ucMantPARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE_EXONERADO_DOC.Designer.vb">
+      <DependentUpon>ucMantPARTICIPANTE_EXONERADO_DOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPARTICIPANTE_EXONERADO_DOC.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPROCESO.Designer.vb">
+      <DependentUpon>ucMantPROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPROCESO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPROGRAMA_FORMACION.Designer.vb">
+      <DependentUpon>ucMantPROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPROGRAMA_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPROGRAMA_FORMACION_TIPOPAGO.designer.vb">
+      <DependentUpon>ucMantPROGRAMA_FORMACION_TIPOPAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPROVEEDOR_AF.Designer.vb">
+      <DependentUpon>ucMantPROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPROVEEDOR_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantPROYECTO_FORMACION.designer.vb">
+      <DependentUpon>ucMantPROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantPROYECTO_FORMACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantREFERENTE.designer.vb">
+      <DependentUpon>ucMantREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantREFERENTE.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantREGION.Designer.vb">
+      <DependentUpon>ucMantREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantREGION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSIPU_CAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucMantSIPU_CAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSIPU_DETALLECAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucMantSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSIPU_GENERACION.Designer.vb" />
+    <Compile Include="controles\ucMantSIPU_GENERACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSIPU_MUNICIPIO.Designer.vb" />
+    <Compile Include="controles\ucMantSIPU_MUNICIPIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSIPU_TIPOCAPACITACIONES.Designer.vb" />
+    <Compile Include="controles\ucMantSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSITIO_CAPACITACION.Designer.vb">
+      <DependentUpon>ucMantSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSITIO_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSOLICITUD_CAPACITACION.designer.vb">
+      <DependentUpon>ucMantSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSOLICITUD_CAPACITACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSOLICITUD_INSCRIPCION_AF.Designer.vb">
+      <DependentUpon>ucMantSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_CURSOS_RECIBIDOS.Designer.vb">
+      <DependentUpon>ucMantSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_EMPLEO_ACTUAL.Designer.vb">
+      <DependentUpon>ucMantSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_EMPLEO_ANTERIOR.Designer.vb">
+      <DependentUpon>ucMantSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSUPERVISION_AF.Designer.vb">
+      <DependentUpon>ucMantSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSUPERVISION_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantSUPERVISION_AF_DET.Designer.vb">
+      <DependentUpon>ucMantSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantSUPERVISION_AF_DET.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantTERMINO_REFERENCIA_AF.designer.vb">
+      <DependentUpon>ucMantTERMINO_REFERENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantTERMINO_REFERENCIA_AF.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_CONTRATACION.Designer.vb">
+      <DependentUpon>ucMantTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_CONTRATACION.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_PERSONA.Designer.vb">
+      <DependentUpon>ucMantTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_PERSONA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_SOLICITUD.Designer.vb">
+      <DependentUpon>ucMantTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantTIPO_SOLICITUD.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantUNIDAD_ORGANIZATIVA.Designer.vb">
+      <DependentUpon>ucMantUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantUNIDAD_ORGANIZATIVA.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucMantUSUARIO.designer.vb">
+      <DependentUpon>ucMantUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucMantUSUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="controles\ucVistaDetalleUSUARIO.Designer.vb">
+      <DependentUpon>ucVistaDetalleUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="controles\ucVistaDetalleUSUARIO.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMantCONTRATO_COMPRA.designer.vb">
+      <DependentUpon>frmMantCONTRATO_COMPRA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCONTRATO_COMPRA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercaDe.designer.vb">
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsociacionGruposPATI.Designer.vb">
+      <DependentUpon>frmAsociacionGruposPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsociacionGruposPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsociacionPROYECTOESP.Designer.vb">
+      <DependentUpon>frmAsociacionPROYECTOESP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAsociacionPROYECTOESP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>frmBuscarACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarACCION_CONTRATADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>frmBuscarACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarACCION_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarACCION_FORMATIVA_DETALLE.Designer.vb">
+      <DependentUpon>frmBuscarACCION_FORMATIVA_DETALLE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarACCION_FORMATIVA_DETALLE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarAREA_FORMACION.Designer.vb">
+      <DependentUpon>frmBuscarAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarAREA_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarAREA_SUPERVISION.Designer.vb">
+      <DependentUpon>frmBuscarAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarAREA_SUPERVISION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarASISTENCIA_AF.Designer.vb">
+      <DependentUpon>frmBuscarASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarASISTENCIA_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarASISTENCIA_AF_DET.Designer.vb">
+      <DependentUpon>frmBuscarASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarASISTENCIA_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCATCURSO_2.Designer.vb">
+      <DependentUpon>frmBuscarCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCATCURSO_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCENTRO_RESPONSABILIDAD.Designer.vb">
+      <DependentUpon>frmBuscarCENTRO_RESPONSABILIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCENTRO_RESPONSABILIDAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCENTRO_RESPONSABILIDAD_UNIDAD.Designer.vb">
+      <DependentUpon>frmBuscarCENTRO_RESPONSABILIDAD_UNIDAD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCIUO.Designer.vb">
+      <DependentUpon>frmBuscarCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCIUO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCIUU.Designer.vb">
+      <DependentUpon>frmBuscarCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCIUU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCONTRATO_BOLPROS.Designer.vb">
+      <DependentUpon>frmBuscarCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCONTRATO_BOLPROS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCONTRATO_PROVEEDOR_AF.Designer.vb">
+      <DependentUpon>frmBuscarCONTRATO_PROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCONTROL_DOCUMENTOS.Designer.vb">
+      <DependentUpon>frmBuscarCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCONTROL_DOCUMENTOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarCURSO_TEMA.Designer.vb">
+      <DependentUpon>frmBuscarCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarCURSO_TEMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarDEPARTAMENTO.Designer.vb">
+      <DependentUpon>frmBuscarDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarDEPARTAMENTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEJERCICIO.Designer.vb">
+      <DependentUpon>frmBuscarEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEJERCICIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEMPRESAS.Designer.vb">
+      <DependentUpon>frmBuscarEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEMPRESAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarESTADO_ACCION_FORMATIVA.Designer.vb">
+      <DependentUpon>frmBuscarESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarESTADO_ACCION_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarESTADO_SOLICITUD.Designer.vb">
+      <DependentUpon>frmBuscarESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarESTADO_SOLICITUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarETAPA.Designer.vb">
+      <DependentUpon>frmBuscarETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarETAPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEVALUACIONES_AF_DET.Designer.vb">
+      <DependentUpon>frmBuscarEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEVALUACIONES_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarEVALUACION_AF.Designer.vb">
+      <DependentUpon>frmBuscarEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarEVALUACION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarFACILITADOR_CAPACITADOR.Designer.vb">
+      <DependentUpon>frmBuscarFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarFACILITADOR_CAPACITADOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_ACCION_CONTRATADA.Designer.vb">
+      <DependentUpon>frmBuscarGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_SOLICITUD.Designer.vb">
+      <DependentUpon>frmBuscarGRUPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_SOLICITUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_USUARIO.Designer.vb">
+      <DependentUpon>frmBuscarGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarGRUPO_USUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarHALLAZGO_SUPERVISION.Designer.vb">
+      <DependentUpon>frmBuscarHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarHALLAZGO_SUPERVISION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarINFORME_FINAL_AF.Designer.vb">
+      <DependentUpon>frmBuscarINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarINFORME_FINAL_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarINFORME_FINAL_DET.Designer.vb">
+      <DependentUpon>frmBuscarINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarINFORME_FINAL_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarLISTA_SUPERVISION_AF.Designer.vb">
+      <DependentUpon>frmBuscarLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarLISTA_SUPERVISION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarMETODO_EVALUACION.Designer.vb">
+      <DependentUpon>frmBuscarMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarMETODO_EVALUACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarMODALIDAD_DE_FORMACION.Designer.vb">
+      <DependentUpon>frmBuscarMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarMODALIDAD_DE_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarMUNICIPIO.Designer.vb">
+      <DependentUpon>frmBuscarMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarMUNICIPIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarNIVEL_ACADEMICO.Designer.vb">
+      <DependentUpon>frmBuscarNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarNIVEL_ACADEMICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarOFERTA_FORMATIVA.Designer.vb">
+      <DependentUpon>frmBuscarOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarOFERTA_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarOPCION_GRUPO.Designer.vb">
+      <DependentUpon>frmBuscarOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarOPCION_GRUPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarOPCION_MENU.Designer.vb">
+      <DependentUpon>frmBuscarOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarOPCION_MENU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPARTICIPANTE.Designer.vb">
+      <DependentUpon>frmBuscarPARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPARTICIPANTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPARTICIPANTE_AF.Designer.vb">
+      <DependentUpon>frmBuscarPARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPARTICIPANTE_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPROCESO.Designer.vb">
+      <DependentUpon>frmBuscarPROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPROCESO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPROGRAMA_FORMACION.Designer.vb">
+      <DependentUpon>frmBuscarPROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPROGRAMA_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPROGRAMA_FORMACION_TIPOPAGO.Designer.vb">
+      <DependentUpon>frmBuscarPROGRAMA_FORMACION_TIPOPAGO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPROVEEDOR_AF.Designer.vb">
+      <DependentUpon>frmBuscarPROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPROVEEDOR_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarPROYECTO_FORMACION.Designer.vb">
+      <DependentUpon>frmBuscarPROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarPROYECTO_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarREFERENTE.Designer.vb">
+      <DependentUpon>frmBuscarREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarREFERENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarREGION.Designer.vb">
+      <DependentUpon>frmBuscarREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarREGION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_CAPACITACIONES.Designer.vb">
+      <DependentUpon>frmBuscarSIPU_CAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_CAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_DETALLECAPACITACIONES.Designer.vb">
+      <DependentUpon>frmBuscarSIPU_DETALLECAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_GENERACION.Designer.vb">
+      <DependentUpon>frmBuscarSIPU_GENERACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_GENERACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_MUNICIPIO.Designer.vb">
+      <DependentUpon>frmBuscarSIPU_MUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_MUNICIPIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_TIPOCAPACITACIONES.Designer.vb">
+      <DependentUpon>frmBuscarSIPU_TIPOCAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSITIO_CAPACITACION.Designer.vb">
+      <DependentUpon>frmBuscarSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSITIO_CAPACITACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSOLICITUD_INSCRIPCION_AF.Designer.vb">
+      <DependentUpon>frmBuscarSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_CURSOS_RECIBIDOS.Designer.vb">
+      <DependentUpon>frmBuscarSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_EMPLEO_ACTUAL.Designer.vb">
+      <DependentUpon>frmBuscarSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_EMPLEO_ANTERIOR.Designer.vb">
+      <DependentUpon>frmBuscarSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSUPERVISION_AF.Designer.vb">
+      <DependentUpon>frmBuscarSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSUPERVISION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarSUPERVISION_AF_DET.Designer.vb">
+      <DependentUpon>frmBuscarSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarSUPERVISION_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_CONTRATACION.Designer.vb">
+      <DependentUpon>frmBuscarTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_CONTRATACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_PERSONA.Designer.vb">
+      <DependentUpon>frmBuscarTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_PERSONA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_SOLICITUD.Designer.vb">
+      <DependentUpon>frmBuscarTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarTIPO_SOLICITUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarUNIDAD_ORGANIZATIVA.Designer.vb">
+      <DependentUpon>frmBuscarUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarUNIDAD_ORGANIZATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscarUSUARIO.Designer.vb">
+      <DependentUpon>frmBuscarUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscarUSUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantACCION_CONTRATADA.designer.vb">
+      <DependentUpon>frmMantACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantACCION_CONTRATADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantACCION_FORMATIVA.designer.vb">
+      <DependentUpon>frmMantACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantACCION_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantAREA_FORMACION.designer.vb">
+      <DependentUpon>frmMantAREA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantAREA_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantAREA_SUPERVISION.designer.vb">
+      <DependentUpon>frmMantAREA_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantAREA_SUPERVISION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantASISTENCIA_AF.designer.vb">
+      <DependentUpon>frmMantASISTENCIA_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantASISTENCIA_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantASISTENCIA_AF_DET.designer.vb">
+      <DependentUpon>frmMantASISTENCIA_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantASISTENCIA_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCATCURSO_2.designer.vb">
+      <DependentUpon>frmMantCATCURSO_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCATCURSO_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCIUO.designer.vb">
+      <DependentUpon>frmMantCIUO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCIUO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCIUU.designer.vb">
+      <DependentUpon>frmMantCIUU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCIUU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCONTRATO_BOLPROS.designer.vb">
+      <DependentUpon>frmMantCONTRATO_BOLPROS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCONTRATO_BOLPROS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCONTROL_DOCUMENTOS.designer.vb">
+      <DependentUpon>frmMantCONTROL_DOCUMENTOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCONTROL_DOCUMENTOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantCURSO_TEMA.designer.vb">
+      <DependentUpon>frmMantCURSO_TEMA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantCURSO_TEMA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantDEPARTAMENTO.designer.vb">
+      <DependentUpon>frmMantDEPARTAMENTO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantDEPARTAMENTO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantEJERCICIO.designer.vb">
+      <DependentUpon>frmMantEJERCICIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantEJERCICIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantEMPRESAS.designer.vb">
+      <DependentUpon>frmMantEMPRESAS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantEMPRESAS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantESTADO_ACCION_FORMATIVA.designer.vb">
+      <DependentUpon>frmMantESTADO_ACCION_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantESTADO_ACCION_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantESTADO_SOLICITUD.designer.vb">
+      <DependentUpon>frmMantESTADO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantESTADO_SOLICITUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantETAPA.designer.vb">
+      <DependentUpon>frmMantETAPA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantETAPA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantEVALUACIONES_AF_DET.designer.vb">
+      <DependentUpon>frmMantEVALUACIONES_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantEVALUACIONES_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantEVALUACION_AF.designer.vb">
+      <DependentUpon>frmMantEVALUACION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantEVALUACION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantFACILITADOR_CAPACITADOR.designer.vb">
+      <DependentUpon>frmMantFACILITADOR_CAPACITADOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantFACILITADOR_CAPACITADOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantGRUPO_ACCION_CONTRATADA.designer.vb">
+      <DependentUpon>frmMantGRUPO_ACCION_CONTRATADA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantGRUPO_USUARIO.designer.vb">
+      <DependentUpon>frmMantGRUPO_USUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantGRUPO_USUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantHALLAZGO_SUPERVISION.designer.vb">
+      <DependentUpon>frmMantHALLAZGO_SUPERVISION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantHALLAZGO_SUPERVISION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantINFORME_FINAL_AF.designer.vb">
+      <DependentUpon>frmMantINFORME_FINAL_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantINFORME_FINAL_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantINFORME_FINAL_DET.designer.vb">
+      <DependentUpon>frmMantINFORME_FINAL_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantINFORME_FINAL_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantLISTA_SUPERVISION_AF.designer.vb">
+      <DependentUpon>frmMantLISTA_SUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantLISTA_SUPERVISION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMETODO_EVALUACION.designer.vb">
+      <DependentUpon>frmMantMETODO_EVALUACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMETODO_EVALUACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMODALIDAD_DE_FORMACION.designer.vb">
+      <DependentUpon>frmMantMODALIDAD_DE_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMODALIDAD_DE_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantMUNICIPIO.designer.vb">
+      <DependentUpon>frmMantMUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantMUNICIPIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantNIVEL_ACADEMICO.designer.vb">
+      <DependentUpon>frmMantNIVEL_ACADEMICO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantNIVEL_ACADEMICO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantOFERTA_FORMATIVA.designer.vb">
+      <DependentUpon>frmMantOFERTA_FORMATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantOFERTA_FORMATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantOPCION_GRUPO.designer.vb">
+      <DependentUpon>frmMantOPCION_GRUPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantOPCION_GRUPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantOPCION_MENU.designer.vb">
+      <DependentUpon>frmMantOPCION_MENU.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantOPCION_MENU.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPadre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE.designer.vb">
+      <DependentUpon>frmMantPARTICIPANTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE_AF.designer.vb">
+      <DependentUpon>frmMantPARTICIPANTE_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE_EXONERADO_DOC.designer.vb">
+      <DependentUpon>frmMantPARTICIPANTE_EXONERADO_DOC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPARTICIPANTE_EXONERADO_DOC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPROCESO.designer.vb">
+      <DependentUpon>frmMantPROCESO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPROCESO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPROGRAMA_FORMACION.designer.vb">
+      <DependentUpon>frmMantPROGRAMA_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPROGRAMA_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPROVEEDOR_AF.designer.vb">
+      <DependentUpon>frmMantPROVEEDOR_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPROVEEDOR_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantPROYECTO_FORMACION.designer.vb">
+      <DependentUpon>frmMantPROYECTO_FORMACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantPROYECTO_FORMACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantREFERENTE.designer.vb">
+      <DependentUpon>frmMantREFERENTE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantREFERENTE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantREGION.designer.vb">
+      <DependentUpon>frmMantREGION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantREGION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSIPU_CAPACITACIONES.designer.vb">
+      <DependentUpon>frmMantSIPU_CAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSIPU_CAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSIPU_DETALLECAPACITACIONES.designer.vb">
+      <DependentUpon>frmMantSIPU_DETALLECAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSIPU_GENERACION.designer.vb">
+      <DependentUpon>frmMantSIPU_GENERACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSIPU_GENERACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSIPU_MUNICIPIO.designer.vb">
+      <DependentUpon>frmMantSIPU_MUNICIPIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSIPU_MUNICIPIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSIPU_TIPOCAPACITACIONES.designer.vb">
+      <DependentUpon>frmMantSIPU_TIPOCAPACITACIONES.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSITIO_CAPACITACION.designer.vb">
+      <DependentUpon>frmMantSITIO_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSITIO_CAPACITACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSOLICITUD_CAPACITACION.designer.vb">
+      <DependentUpon>frmMantSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSOLICITUD_CAPACITACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSOLICITUD_INSCRIPCION_AF.designer.vb">
+      <DependentUpon>frmMantSOLICITUD_INSCRIPCION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSOLIC_CURSOS_RECIBIDOS.designer.vb">
+      <DependentUpon>frmMantSOLIC_CURSOS_RECIBIDOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSOLIC_EMPLEO_ACTUAL.designer.vb">
+      <DependentUpon>frmMantSOLIC_EMPLEO_ACTUAL.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSOLIC_EMPLEO_ANTERIOR.designer.vb">
+      <DependentUpon>frmMantSOLIC_EMPLEO_ANTERIOR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSUPERVISION_AF.designer.vb">
+      <DependentUpon>frmMantSUPERVISION_AF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSUPERVISION_AF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantSUPERVISION_AF_DET.designer.vb">
+      <DependentUpon>frmMantSUPERVISION_AF_DET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantSUPERVISION_AF_DET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTIPO_CONTRATACION.designer.vb">
+      <DependentUpon>frmMantTIPO_CONTRATACION.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTIPO_CONTRATACION.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTIPO_PERSONA.designer.vb">
+      <DependentUpon>frmMantTIPO_PERSONA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTIPO_PERSONA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantTIPO_SOLICITUD.designer.vb">
+      <DependentUpon>frmMantTIPO_SOLICITUD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantTIPO_SOLICITUD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantUNIDAD_ORGANIZATIVA.designer.vb">
+      <DependentUpon>frmMantUNIDAD_ORGANIZATIVA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantUNIDAD_ORGANIZATIVA.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMantUSUARIO.designer.vb">
+      <DependentUpon>frmMantUSUARIO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMantUSUARIO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMensajeBox.Designer.vb">
+      <DependentUpon>frmMensajeBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMensajeBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSolicitudesCapacitacion.Designer.vb">
+      <DependentUpon>frmSolicitudesCapacitacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSolicitudesCapacitacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubirDatosHTP.Designer.vb">
+      <DependentUpon>frmSubirDatosHTP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubirDatosHTP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmAutorizacionPago.Designer.vb">
+      <DependentUpon>frmAutorizacionPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmAutorizacionPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmFacturaCursos.Designer.vb">
+      <DependentUpon>frmFacturaCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmFacturaCursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMotivoCambio.Designer.vb">
+      <DependentUpon>frmMotivoCambio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMotivoCambio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmFacturaCursos_EjecucionPresup.Designer.vb">
+      <DependentUpon>frmFacturaCursos_EjecucionPresup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmFacturaCursos_EjecucionPresup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmInformeFinal.Designer.vb">
+      <DependentUpon>frmInformeFinal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PagoAccionFormativa\frmInformeFinal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultarProyEsp.Designer.vb">
+      <DependentUpon>frmConsultarProyEsp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\frmConsultarProyEsp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmGenerarReporteExcelBolrpros.Designer.vb">
+      <DependentUpon>frmGenerarReporteExcelBolrpros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmGenerarReporteExcelBolrpros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmPATI_Indicadores.Designer.vb">
+      <DependentUpon>frmPATI_Indicadores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmPATI_Indicadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmBoletasDNCPATI.Designer.vb">
+      <DependentUpon>frmBoletasDNCPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmBoletasDNCPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmCursosProgramaPATI_Etapas.Designer.vb">
+      <DependentUpon>frmCursosProgramaPATI_Etapas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmCursosProgramaPATI_Etapas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmTDRsAsociadosPATI.Designer.vb">
+      <DependentUpon>frmTDRsAsociadosPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmTDRsAsociadosPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmAnalisisCaracSocialesPATI.Designer.vb">
+      <DependentUpon>frmAnalisisCaracSocialesPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmAnalisisCaracSocialesPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmAnalisisEjecucionPATI.Designer.vb">
+      <DependentUpon>frmAnalisisEjecucionPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmAnalisisEjecucionPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmAsistenciaNotaParticipantesPATI.Designer.vb">
+      <DependentUpon>frmAsistenciaNotaParticipantesPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmAsistenciaNotaParticipantesPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmCalendarioCursos.Designer.vb">
+      <DependentUpon>frmCalendarioCursos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmCalendarioCursos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmCursosProgramaPATI.Designer.vb">
+      <DependentUpon>frmCursosProgramaPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmCursosProgramaPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmDesembolsosPATI.Designer.vb">
+      <DependentUpon>frmDesembolsosPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmDesembolsosPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmOfertaFormativaAdjudicadaHTP.Designer.vb">
+      <DependentUpon>frmOfertaFormativaAdjudicadaHTP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmOfertaFormativaAdjudicadaHTP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmOfertaFormativaPorSitio.Designer.vb">
+      <DependentUpon>frmOfertaFormativaPorSitio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmOfertaFormativaPorSitio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmParticipantesActivoYNoActivosPATI.Designer.vb">
+      <DependentUpon>frmParticipantesActivoYNoActivosPATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmParticipantesActivoYNoActivosPATI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmEjecucionProgramas.Designer.vb">
+      <DependentUpon>frmEjecucionProgramas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmEjecucionProgramas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmReporteBase.Designer.vb">
+      <DependentUpon>frmReporteBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmReporteBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmSolicitudesReport.Designer.vb">
+      <DependentUpon>frmSolicitudesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmSolicitudesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportes\frmParticipantesHTP.Designer.vb">
+      <DependentUpon>frmParticipantesHTP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportes\frmParticipantesHTP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\frmCreacionMasivaUsuarios.Designer.vb">
+      <DependentUpon>frmCreacionMasivaUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\frmCreacionMasivaUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seguridad\wfAdministrarSeguridad.Designer.vb">
+      <DependentUpon>wfAdministrarSeguridad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seguridad\wfAdministrarSeguridad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Service References\srvSGAFP\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CentrosFormacion\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CentrosFormacion\frmAsignacionCentro_Tecnico.resx">
+      <DependentUpon>frmAsignacionCentro_Tecnico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultarCursos.resx">
+      <DependentUpon>frmConsultarCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucBaseLista.resx">
+      <DependentUpon>ucBaseLista.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucCalendarioDeCursos.resx">
+      <DependentUpon>ucCalendarioDeCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleACCION_CONTRATADA.resx">
+      <DependentUpon>ucDetalleACCION_CONTRATADA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleCONTRATO_BOLPROS.resx">
+      <DependentUpon>ucDetalleCONTRATO_BOLPROS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleCONTRATO_COMPRA.resx">
+      <DependentUpon>ucDetalleCONTRATO_COMPRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetallePROYECTO_FORMACION.resx">
+      <DependentUpon>ucDetallePROYECTO_FORMACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleREFERENTE.resx">
+      <DependentUpon>ucDetalleREFERENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleSOLICITUD_CAPACITACION.resx">
+      <DependentUpon>ucDetalleSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucDetalleUSUARIO.resx">
+      <DependentUpon>ucDetalleUSUARIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaACCION_CONTRATADA.resx">
+      <DependentUpon>ucListaACCION_CONTRATADA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaACCION_FORMATIVA.resx">
+      <DependentUpon>ucListaACCION_FORMATIVA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaCONTRATO_BOLPROS.resx">
+      <DependentUpon>ucListaCONTRATO_BOLPROS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaCONTRATO_COMPRA.resx">
+      <DependentUpon>ucListaCONTRATO_COMPRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaOFERTA_FORMATIVA.resx">
+      <DependentUpon>ucListaOFERTA_FORMATIVA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaPARTICIPANTE.resx">
+      <DependentUpon>ucListaPARTICIPANTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaPROYECTO_FORMACION.resx">
+      <DependentUpon>ucListaPROYECTO_FORMACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaREFERENTE.resx">
+      <DependentUpon>ucListaREFERENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucListaSOLICITUD_CAPACITACION.resx">
+      <DependentUpon>ucListaSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantACCION_CONTRATADA.resx">
+      <DependentUpon>ucMantACCION_CONTRATADA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantCONTRATO_BOLPROS.resx">
+      <DependentUpon>ucMantCONTRATO_BOLPROS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantCONTRATO_COMPRA.resx">
+      <DependentUpon>ucMantCONTRATO_COMPRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantPARTICIPANTE.resx">
+      <DependentUpon>ucMantPARTICIPANTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantPARTICIPANTE_EXONERADO_DOC.resx">
+      <DependentUpon>ucMantPARTICIPANTE_EXONERADO_DOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucMantSOLICITUD_CAPACITACION.resx">
+      <DependentUpon>ucMantSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="controles\ucVistaDetalleUSUARIO.resx">
+      <DependentUpon>ucVistaDetalleUSUARIO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantCONTRATO_COMPRA.resx">
+      <DependentUpon>frmMantCONTRATO_COMPRA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAcercaDe.resx">
+      <DependentUpon>frmAcercaDe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsociacionGruposPATI.resx">
+      <DependentUpon>frmAsociacionGruposPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsociacionPROYECTOESP.resx">
+      <DependentUpon>frmAsociacionPROYECTOESP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantCONTRATO_BOLPROS.resx">
+      <DependentUpon>frmMantCONTRATO_BOLPROS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantPadre.resx">
+      <DependentUpon>frmMantPadre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantPARTICIPANTE_EXONERADO_DOC.resx">
+      <DependentUpon>frmMantPARTICIPANTE_EXONERADO_DOC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantPROYECTO_FORMACION.resx">
+      <DependentUpon>frmMantPROYECTO_FORMACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantREFERENTE.resx">
+      <DependentUpon>frmMantREFERENTE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMantSOLICITUD_CAPACITACION.resx">
+      <DependentUpon>frmMantSOLICITUD_CAPACITACION.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMensajeBox.resx">
+      <DependentUpon>frmMensajeBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSolicitudesCapacitacion.resx">
+      <DependentUpon>frmSolicitudesCapacitacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubirDatosHTP.resx">
+      <DependentUpon>frmSubirDatosHTP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoAccionFormativa\frmAutorizacionPago.resx">
+      <DependentUpon>frmAutorizacionPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoAccionFormativa\frmFacturaCursos.resx">
+      <DependentUpon>frmFacturaCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMotivoCambio.resx">
+      <DependentUpon>frmMotivoCambio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoAccionFormativa\frmFacturaCursos_EjecucionPresup.resx">
+      <DependentUpon>frmFacturaCursos_EjecucionPresup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagoAccionFormativa\frmInformeFinal.resx">
+      <DependentUpon>frmInformeFinal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\frmConsultarProyEsp.resx">
+      <DependentUpon>frmConsultarProyEsp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmGenerarReporteExcelBolrpros.resx">
+      <DependentUpon>frmGenerarReporteExcelBolrpros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmPATI_Indicadores.resx">
+      <DependentUpon>frmPATI_Indicadores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmBoletasDNCPATI.resx">
+      <DependentUpon>frmBoletasDNCPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmCursosProgramaPATI_Etapas.resx">
+      <DependentUpon>frmCursosProgramaPATI_Etapas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmTDRsAsociadosPATI.resx">
+      <DependentUpon>frmTDRsAsociadosPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmAnalisisCaracSocialesPATI.resx">
+      <DependentUpon>frmAnalisisCaracSocialesPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmAnalisisEjecucionPATI.resx">
+      <DependentUpon>frmAnalisisEjecucionPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmAsistenciaNotaParticipantesPATI.resx">
+      <DependentUpon>frmAsistenciaNotaParticipantesPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmCalendarioCursos.resx">
+      <DependentUpon>frmCalendarioCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmCursosProgramaPATI.resx">
+      <DependentUpon>frmCursosProgramaPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmDesembolsosPATI.resx">
+      <DependentUpon>frmDesembolsosPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmOfertaFormativaPorSitio.resx">
+      <DependentUpon>frmOfertaFormativaPorSitio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmParticipantesActivoYNoActivosPATI.resx">
+      <DependentUpon>frmParticipantesActivoYNoActivosPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmEjecucionProgramas.resx">
+      <DependentUpon>frmEjecucionProgramas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmReporteBase.resx">
+      <DependentUpon>frmReporteBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmSolicitudesReport.resx">
+      <DependentUpon>frmSolicitudesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportes\frmParticipantesHTP.resx">
+      <DependentUpon>frmParticipantesHTP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\frmCreacionMasivaUsuarios.resx">
+      <DependentUpon>frmCreacionMasivaUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seguridad\wfAdministrarSeguridad.resx">
+      <DependentUpon>wfAdministrarSeguridad.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\SGAFP.DL.DS_DL+ProyectosEspecialesDataTable.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.CONTRATO_COMPRA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaPARTICIPANTE.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\srvSGAFP\wsSGAFP.wsdl" />
+    <None Include="SGAFPWin_1_TemporaryKey.pfx" />
+    <None Include="SGAFPWin_2_TemporaryKey.pfx" />
+    <None Include="SGAFPWin_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_BL\SGAFP_BL.vbproj">
+      <Project>{BCF1CEF8-83B8-4010-9405-A3EA043B8E9C}</Project>
+      <Name>SGAFP_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_DL\SGAFP_DL.vbproj">
+      <Project>{42A91AA2-475A-4BBA-8A0A-B7F4CB17796F}</Project>
+      <Name>SGAFP_DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_RL\SGAFP_RL.vbproj">
+      <Project>{8F42A618-B3A4-4B5E-B15F-BA919191542E}</Project>
+      <Name>SGAFP_RL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_WinUC\SGAFP_WinUC.vbproj">
+      <Project>{C0BAFF17-2335-4A51-8CC8-9D784F85C3D6}</Project>
+      <Name>SGAFP_WinUC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.3.0">
+      <Visible>False</Visible>
+      <ProductName>Visual Studio Tools para Office system 3.0 Runtime Service Pack 1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undofilter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Microsoft.ApplicationBlocks.Data.dll" />
+    <Content Include="people.ico" />
+    <None Include="My Project\DataSources\SGAFP.DL.DS_DL+DeptoFaseMunicipioDataTable.datasource" />
+    <None Include="My Project\DataSources\SGAFP.DL.DS_DL+EjecucionPresupuestariaFacturaDataTable.datasource" />
+    <None Include="My Project\DataSources\SGAFP.DL.DS_DL+MunicFaseMunicipioDataTable.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.ACCION_CONTRATADA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.ACCION_FORMATIVA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.CONTRATO_PROVEEDOR_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.CONTRATO_SUB_AREA_FORMACION.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.Criteria.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.DEPARTAMENTO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.ESTADO_CIVIL.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.GRUPO_SOLICITUD.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaACCION_FORMATIVA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaCENTRO_RESPONSABILIDAD.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaCONTRATO_PROVEEDOR_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaDEPARTAMENTO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaESTADO_ACCION_FORMATIVA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaESTADO_CIVIL.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaESTADO_INFORME_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaFACTURA_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaINFORME_FINAL_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaMODALIDAD_DE_FORMACION.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaMUNICIPIO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaOFERTA_FORMATIVA.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaPROVEEDOR_AF.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaREFERENTE.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaSITIO_CAPACITACION.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaSOLICITUD_CAPACITACION.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaTECNICOS_SITIOS_ASIG.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.listaUSUARIO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.MODALIDAD_DE_FORMACION.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.MUNICIPIO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.NIVEL_ACADEMICO.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.PAIS.datasource" />
+    <None Include="My Project\DataSources\SGAFP.EL.SOLICITUD_CAPACITACION.datasource" />
+    <None Include="My Project\DataSources\SIFP.EL.listaProgramas.datasource" />
+    <None Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Resources\pdf.GIF" />
+    <None Include="Resources\word.GIF" />
+    <None Include="Resources\excel.GIF" />
+    <None Include="Resources\print-preview.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\door.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\folder doc.png" />
+    <None Include="Resources\doc.png" />
+    <None Include="Resources\todo.png" />
+    <None Include="Resources\flag blue.png" />
+    <None Include="Resources\flag green.png" />
+    <None Include="Resources\flag red.png" />
+    <None Include="Resources\flag yellow.png" />
+    <None Include="Resources\users 1.png" />
+    <None Include="Resources\people.png" />
+    <None Include="Resources\ok.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\informe.png" />
+    <None Include="Resources\arrow_join.png" />
+    <None Include="Resources\unrelation.png" />
+    <None Include="Resources\web.png" />
+    <None Include="Resources\correo_proveedor.gif" />
+    <None Include="Resources\rechazar.png" />
+    <None Include="Resources\Anular.gif" />
+    <None Include="Resources\aprobar.gif" />
+    <None Include="Resources\my_invoices.png" />
+    <None Include="Resources\ButtonEdit.png" />
+    <None Include="Resources\autorizacion.png" />
+    <None Include="Resources\shopping.png" />
+    <None Include="Resources\regla.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\Remove.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\Remove.png" />
+    <None Include="Service References\srvSGAFP\wsSGAFP.disco" />
+    <None Include="Service References\srvSGAFP\configuration91.svcinfo" />
+    <None Include="Service References\srvSGAFP\configuration.svcinfo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\srvSGAFP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="vcard.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="ADODB">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.BonusSkins.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Charts.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.CodeParser.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Data.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.OfficeSkins.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.PivotGrid.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Printing.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Reports.v11.1.Designer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.RichEdit.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.Utils.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraBars.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v11.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraCharts.v11.1.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraEditors.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraLayout.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraNavBar.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPivotGrid.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraPrinting.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraReports.v11.1.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraRichEdit.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v11.1.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v11.1.Reporting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraScheduler.v11.1.Reporting.Extensions">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraTreeList.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="DevExpress.XtraVerticalGrid.v11.1">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ApplicationBlocks.Data.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\srvSGAFP\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

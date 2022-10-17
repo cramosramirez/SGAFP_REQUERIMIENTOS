@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFSIVAFORMA.Entidades" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFSIVAFORMA.Entidades" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FORMADOR">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="APELLIDOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CORREO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DIRECCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DUI_CR_PASS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FECHA_ACT" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FECHA_CREACION" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FECHA_NACIMIENTO" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID_DEPTO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_ESTADO_FORMA" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_FORMADOR" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_GENERO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_MUNICIPIO" type="xs:int" />
+      <xs:element minOccurs="0" name="ID_PAIS" type="xs:int" />
+      <xs:element minOccurs="0" name="NIT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NOMBRES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NRC" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFMOVIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TELEFONOS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUARIO_ACT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USUARIO_CREACION" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FORMADOR" nillable="true" type="tns:FORMADOR" />
+</xs:schema>

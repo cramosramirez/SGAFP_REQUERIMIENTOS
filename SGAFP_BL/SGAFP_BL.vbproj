@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCF1CEF8-83B8-4010-9405-A3EA043B8E9C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.BL</RootNamespace>
+    <AssemblyName>SGAFP_BL</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_BL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_BL.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <HintPath>..\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.ExceptionManagement, Version=2.0.0.0, Culture=neutral, PublicKeyToken=090ce9b8f6fec061">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Microsoft.ApplicationBlocks.ExceptionManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="PATI_EL">
+      <HintPath>..\..\..\..\FUENTES\SGAFP\desarrollo\SGAFP\bin\PATI_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_DL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLMembershipProvider_BL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SQLMembershipProvider_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLMembershipProvider_DL">
+      <HintPath>..\SQLMembershipProvider_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLMembershipProvider_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\SQLMembershipProvider_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="SGAFP.DL" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="Microsoft.ApplicationBlocks.ExceptionManagement" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cACCION_FORMATIVA.Partial.vb" />
+    <Compile Include="cACCION_FORMATIVA_HIST.Partial.vb" />
+    <Compile Include="cACCION_FORMATIVA_HIST.vb" />
+    <Compile Include="cACCION_FORMATIVA_PENA.Partial.vb" />
+    <Compile Include="cACCION_FORMATIVA_PENA.vb" />
+    <Compile Include="cACCION_FORMATIVA_REPROG.Partial.vb" />
+    <Compile Include="cACCION_FORMATIVA_REPROG.vb">
+    </Compile>
+    <Compile Include="cACCION_FORMATIVA_SEGUI.Partial.vb" />
+    <Compile Include="cACCION_FORMATIVA_SEGUI.vb" />
+    <Compile Include="cACCION_PROGRA_RETRO.Partial.vb" />
+    <Compile Include="cACCION_PROGRA_RETRO.vb" />
+    <Compile Include="cACCION_VISITAS_SEGUI.vb" />
+    <Compile Include="cACTI_ECONOMICA.vb" />
+    <Compile Include="cAREA_EMPRESA.vb" />
+    <Compile Include="cAREA_FORMACION.Partial.vb" />
+    <Compile Include="cAREA_FORMACION_CONTRA.Partial.vb" />
+    <Compile Include="cAREA_FORMACION_CONTRA.vb" />
+    <Compile Include="cASISTENCIA_AF.Partial.vb" />
+    <Compile Include="cASISTENCIA_AF_DET.Partial.vb" />
+    <Compile Include="cASISTENCIA_PAGO.vb" />
+    <Compile Include="cASISTENCIA_PAGO_DET.Partial.vb" />
+    <Compile Include="cASISTENCIA_PAGO_DET.vb" />
+    <Compile Include="cCALE_FECHA.vb" />
+    <Compile Include="cCALE_HORARIO.vb" />
+    <Compile Include="cCOMPRA_EX_PAGO_ASISTE.Partial.vb" />
+    <Compile Include="cCOMPRA_EX_PAGO_ASISTE.vb" />
+    <Compile Include="cCONTRATO_COMPRA.Partial.vb" />
+    <Compile Include="cCONTRATO_COMPRA.vb" />
+    <Compile Include="cCONTRATO_COMPRA_PENALIZACION.Partial.vb" />
+    <Compile Include="cCONTRATO_COMPRA_PENALIZACION.vb" />
+    <Compile Include="cCONTRATO_COMPRA_PGOACTIVOS.vb" />
+    <Compile Include="cCURSO_TEMA.Partial.vb" />
+    <Compile Include="cDEPARTAMENTO.Partial.vb" />
+    <Compile Include="cDISCA_SOLIC_PRESELE.Partial.vb" />
+    <Compile Include="cDISCA_SOLIC_PRESELE.vb" />
+    <Compile Include="cESTADO_REPROG.vb" />
+    <Compile Include="cEVALUACIONES_AF_DET.Partial.vb" />
+    <Compile Include="cEVALUACION_AF.Partial.vb" />
+    <Compile Include="cFASE.vb" />
+    <Compile Include="cFASE_MUNICIPIOS.Partial.vb" />
+    <Compile Include="cFASE_MUNICIPIOS.vb" />
+    <Compile Include="cFUENTE_FINANCIAMIENTO.vb" />
+    <Compile Include="cFUENTE_MUNICIPIO.Partial.vb" />
+    <Compile Include="cFUENTE_MUNICIPIO.vb" />
+    <Compile Include="cGRUPO_SELECCION.Partial.vb" />
+    <Compile Include="cGRUPO_SELECCION.vb" />
+    <Compile Include="cGRUPO_SOLICITUD.Partial.vb" />
+    <Compile Include="cINFORME_FINAL_AF.Partial.vb" />
+    <Compile Include="cINFORME_FINAL_AF_HIS.Partial.vb" />
+    <Compile Include="cINFORME_FINAL_DET.Partial.vb" />
+    <Compile Include="cINFORME_PRESELECCION_EC.Partial.vb" />
+    <Compile Include="cINFORME_PRESELECCION_EC.vb" />
+    <Compile Include="cINGRESO_MES.vb" />
+    <Compile Include="cListasDeDistribucionCorreo.vb" />
+    <Compile Include="cMAPA.vb" />
+    <Compile Include="cMOTIVO_DEJO_ESTU.vb" />
+    <Compile Include="cMOTIVO_DEJO_TRAB.vb" />
+    <Compile Include="cMUNICIPIO.Partial.vb" />
+    <Compile Include="cOFERTA_FORMATIVA.Partial.vb" />
+    <Compile Include="cOFERTA_FORMATIVA_SITIO.Partial.vb" />
+    <Compile Include="controladorBase.vb" />
+    <Compile Include="cPAQUETE_INFORME.Partial.vb" />
+    <Compile Include="cPAQUETE_INFORME.vb" />
+    <Compile Include="cPAQUETE_INFORME_DET.Partial.vb" />
+    <Compile Include="cPAQUETE_INFORME_DET.vb" />
+    <Compile Include="cPARTICIPANTE.Partial.vb" />
+    <Compile Include="cPROVEEDOR_AF.Partial.vb" />
+    <Compile Include="cRANGO_PORC_PENA.Partial.vb" />
+    <Compile Include="cRANGO_PORC_PENA.vb" />
+    <Compile Include="cReportes.vb" />
+    <Compile Include="cSIPU_CAPACITACIONES.Partial.vb" />
+    <Compile Include="cSIPU_CAPACITACIONES.vb" />
+    <Compile Include="cSIPU_DETALLECAPACITADO.vb" />
+    <Compile Include="cSIPU_DETALLECAPACITADO.Partial.vb" />
+    <Compile Include="cSIPU_GENERACION.vb" />
+    <Compile Include="cSIPU_MUNICIPIO.vb" />
+    <Compile Include="cSIPU_TIPOCAPACITACIONES.vb" />
+    <Compile Include="cSITIO_CAPACITACION.Partial.vb" />
+    <Compile Include="cSOLICITUD_INSCRIPCION_AF.Partial.vb" />
+    <Compile Include="cSOLICITUD_INSCRIPCION_EC.vb" />
+    <Compile Include="cSOLICITUD_PRESELECCION_EC.Partial.vb" />
+    <Compile Include="cSOLICITUD_PRESELECCION_EC.vb" />
+    <Compile Include="cSOLIC_PRESELE_CURREC.Partial.vb" />
+    <Compile Include="cSOLIC_PRESELE_CURREC.vb" />
+    <Compile Include="cSOLIC_PRESELE_EMPRE.vb" />
+    <Compile Include="cTECNICOS_SITIOS_ASIG.vb" />
+    <Compile Include="cTIEMPO_NOTRAB.vb" />
+    <Compile Include="cTIPO_ADJUDICACION.vb" />
+    <Compile Include="cTIPO_PENALIZA.Partial.vb" />
+    <Compile Include="cTIPO_PENALIZA.vb" />
+    <Compile Include="cTIPO_SELECC.vb" />
+    <Compile Include="cUNIDAD_ORGANIZATIVA.Partial.vb" />
+    <Compile Include="cUSUARIO.vb" />
+    <Compile Include="cUNIDAD_ORGANIZATIVA.vb" />
+    <Compile Include="cTIPO_SOLICITUD.vb" />
+    <Compile Include="cTIPO_PERSONA.vb" />
+    <Compile Include="cSUPERVISION_AF_DET.vb" />
+    <Compile Include="cSUPERVISION_AF.vb" />
+    <Compile Include="cSOLICITUD_INSCRIPCION_AF.vb" />
+    <Compile Include="cSOLIC_EMPLEO_ANTERIOR.vb" />
+    <Compile Include="cSOLIC_EMPLEO_ACTUAL.vb" />
+    <Compile Include="cSOLIC_CURSOS_RECIBIDOS.vb" />
+    <Compile Include="cSITIO_CAPACITACION.vb">
+    </Compile>
+    <Compile Include="cREGION.vb" />
+    <Compile Include="cPROVEEDOR_AF.vb" />
+    <Compile Include="cPROGRAMA_FORMACION.vb" />
+    <Compile Include="cPROCESO.vb" />
+    <Compile Include="cPARTICIPANTE_AF.vb" />
+    <Compile Include="cPARTICIPANTE.vb" />
+    <Compile Include="cOPCION_MENU.vb" />
+    <Compile Include="cOPCION_GRUPO.vb" />
+    <Compile Include="cOFERTA_FORMATIVA.vb" />
+    <Compile Include="cNIVEL_ACADEMICO.vb" />
+    <Compile Include="cMUNICIPIO.vb" />
+    <Compile Include="cMODALIDAD_DE_FORMACION.vb" />
+    <Compile Include="cMETODO_EVALUACION.vb" />
+    <Compile Include="cLISTA_SUPERVISION_AF.vb" />
+    <Compile Include="cINFORME_FINAL_DET.vb" />
+    <Compile Include="cINFORME_FINAL_AF.vb" />
+    <Compile Include="cHALLAZGO_SUPERVISION.vb" />
+    <Compile Include="cGRUPO_USUARIO.vb" />
+    <Compile Include="cFACILITADOR_CAPACITADOR.vb" />
+    <Compile Include="cEVALUACIONES_AF_DET.vb" />
+    <Compile Include="cEVALUACION_AF.vb" />
+    <Compile Include="cETAPA.vb" />
+    <Compile Include="cESTADO_SOLICITUD.vb" />
+    <Compile Include="cESTADO_ACCION_FORMATIVA.vb" />
+    <Compile Include="cEMPRESAS.vb" />
+    <Compile Include="cEJERCICIO.vb" />
+    <Compile Include="cDEPARTAMENTO.vb" />
+    <Compile Include="cCURSO_TEMA.vb" />
+    <Compile Include="cCONTROL_DOCUMENTOS.vb" />
+    <Compile Include="cCIUU.vb" />
+    <Compile Include="cCIUO.vb" />
+    <Compile Include="cCATCURSO_2.vb" />
+    <Compile Include="cASISTENCIA_AF_DET.vb" />
+    <Compile Include="cASISTENCIA_AF.vb" />
+    <Compile Include="cAREA_SUPERVISION.vb" />
+    <Compile Include="cACCION_FORMATIVA.vb" />
+    <Compile Include="cAREA_FORMACION.vb" />
+    <Compile Include="cSOLIC_PRESELE_EMPRE.Partial.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_DL\SGAFP_DL.vbproj">
+      <Project>{42A91AA2-475A-4BBA-8A0A-B7F4CB17796F}</Project>
+      <Name>SGAFP_DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cACCION_CONTRATADA.Partial.vb" />
+    <Compile Include="cACCION_CONTRATADA.vb" />
+    <Compile Include="cACCION_FORMATIVA_DETALLE.vb" />
+    <Compile Include="cACCION_FORMATIVA_PATI.vb" />
+    <Compile Include="cACCION_PARTI_SINDOCTOS.vb" />
+    <Compile Include="cASISTENCIA_AF_HORARIO.Partial.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cASISTENCIA_AF_HORARIO.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cASISTENCIA_AF_HORARIO_REPROG.Partial.vb" />
+    <Compile Include="cASISTENCIA_AF_HORARIO_REPROG.vb" />
+    <Compile Include="cASISTENCIA_AF_REPROG.Partial.vb" />
+    <Compile Include="cASISTENCIA_AF_REPROG.vb" />
+    <Compile Include="cCENTRO_RESPONSABILIDAD.vb" />
+    <Compile Include="cCENTRO_RESPONSABILIDAD_UNIDAD.vb" />
+    <Compile Include="cCOMPROMISO_AF.Partial.vb" />
+    <Compile Include="cCOMPROMISO_AF.vb" />
+    <Compile Include="cCOMPROMISO_CONTRATO.vb" />
+    <Compile Include="cCONTRATO_BOLPROS.Partial.vb" />
+    <Compile Include="cCONTRATO_BOLPROS.vb" />
+    <Compile Include="cCONTRATO_PROVEEDOR_AF.Partial.vb" />
+    <Compile Include="cCONTRATO_PROVEEDOR_AF.vb" />
+    <Compile Include="cCONTRATO_SUB_AREA_FORMACION.Partial.vb" />
+    <Compile Include="cCONTRATO_SUB_AREA_FORMACION.vb" />
+    <Compile Include="cDESEMBOLSO.Partial.vb" />
+    <Compile Include="cDESEMBOLSO.vb" />
+    <Compile Include="cDESEMBOLSO_MUNI_LIQUI_DET.Partial.vb" />
+    <Compile Include="cDESEMBOLSO_MUNI_LIQUI_DET.vb" />
+    <Compile Include="cDISCAPACIDAD.vb" />
+    <Compile Include="cDISCA_POR_PARTICIPANTE.vb" />
+    <Compile Include="cDISCA_POR_SOLICITUD.vb" />
+    <Compile Include="cEDUC_LEE_ESCRIBE.vb" />
+    <Compile Include="cEjecucionReporte.vb" />
+    <Compile Include="cEJERCICIO.Partial.vb" />
+    <Compile Include="cESTADO_ACCION_FORMATIVA.Partial.vb" />
+    <Compile Include="cESTADO_CIVIL.vb" />
+    <Compile Include="cESTADO_INFORME_AF.vb" />
+    <Compile Include="cFACTURA_AF.Partial.vb" />
+    <Compile Include="cFACTURA_AF.vb" />
+    <Compile Include="cFACTURA_DET.Partial.vb" />
+    <Compile Include="cFACTURA_DET.vb" />
+    <Compile Include="cFASE_ESTADO_INFORME.vb" />
+    <Compile Include="cFUENTE_FINANCIAMIENTO.Partial.vb" />
+    <Compile Include="cGRUPO_ACCION_CONTRATADA.Partial.vb" />
+    <Compile Include="cGRUPO_ACCION_CONTRATADA.vb" />
+    <Compile Include="cGRUPO_SOLICITUD.vb" />
+    <Compile Include="cINFORME_FINAL_AF_HIS.vb" />
+    <Compile Include="cMUNICIPIO_CONVOCATORIA.Partial.vb" />
+    <Compile Include="cMUNICIPIO_CONVOCATORIA.vb" />
+    <Compile Include="cMUNICIPIO_LIQUIDACION.Partial.vb" />
+    <Compile Include="cMUNICIPIO_LIQUIDACION.vb" />
+    <Compile Include="cMUNICIPIO_LIQUIDACION_DET.vb" />
+    <Compile Include="cNIVEL_ACADEMICO.Partial.vb" />
+    <Compile Include="cOFERTA_FORMATIVA_DEPTO.Partial.vb" />
+    <Compile Include="cOFERTA_FORMATIVA_DEPTO.vb" />
+    <Compile Include="cOFERTA_FORMATIVA_SITIO.vb" />
+    <Compile Include="cPAIS.Partial.vb" />
+    <Compile Include="cPAIS.vb" />
+    <Compile Include="cPARTICIPANTE_AF.Partial.vb" />
+    <Compile Include="cPARTICIPANTE_EXONERADO_DOC.Partial.vb" />
+    <Compile Include="cPARTICIPANTE_EXONERADO_DOC.vb" />
+    <Compile Include="cProcesosPati.vb" />
+    <Compile Include="cPROGRAMA_FORMACION.Partial.vb" />
+    <Compile Include="cPROGRAMA_FORMACION_TIPOPAGO.vb" />
+    <Compile Include="cPROYECTO_FORMACION.Partial.vb" />
+    <Compile Include="cPROYECTO_FORMACION.vb" />
+    <Compile Include="cREFERENCIA.vb" />
+    <Compile Include="cREFERENTE.Partial.vb" />
+    <Compile Include="cREFERENTE.vb" />
+    <Compile Include="cROL_PROGRAMA.vb" />
+    <Compile Include="cSITIO_CAPACITACION_EJERCICIO.vb" />
+    <Compile Include="cSOLICITUD_CAPACITACION.Partial.vb" />
+    <Compile Include="cSOLICITUD_CAPACITACION.vb" />
+    <Compile Include="cSOLIC_INSCRIPCION_AF_HIST.vb" />
+    <Compile Include="cSUB_AREA_FORMACION.Partial.vb" />
+    <Compile Include="cSUB_AREA_FORMACION.vb" />
+    <Compile Include="cTECNICOS_SITIOS_ASIG.Partial.vb" />
+    <Compile Include="cTERMINO_REFERENCIA_AF.Partial.vb" />
+    <Compile Include="cTERMINO_REFERENCIA_AF.vb" />
+    <Compile Include="cTIEMPO_DEJO_ESTUDIAR.vb" />
+    <Compile Include="cTIPO_CONTRATACION.vb" />
+    <Compile Include="cTIPO_EMPLEO.vb" />
+    <Compile Include="cTIPO_SOLICITUD.Partial.vb" />
+    <Compile Include="cUSUARIO.Partial.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="~/Default.aspx" title="SGAFP" description="" xmlns="">
+   <siteMapNode url="~/Mantenimientos/Default.aspx" title="Catálogos" description="Catálogos">      
+      <!--<siteMapNode url="~/Mantenimientos/wfMantUNIDAD_ORGANIZATIVA.aspx" title="UNIDAD_ORGANIZATIVA" description="Ver/Editar Registros">
+      </siteMapNode>
+      <siteMapNode url="~/Mantenimientos/wfMantTIPO_SOLICITUD.aspx" title="TIPO_SOLICITUD" description="Ver/Editar Registros">
+      </siteMapNode>
+      -->	 
+      <siteMapNode url="~/Mantenimientos/wfMantPROVEEDOR_AF.aspx" title="Proveedores de Capacitación" description="Ver/Editar Registros">
+      </siteMapNode>     
+      </siteMapNode>
+      <siteMapNode url="~/CursosFormacion/Default.aspx" title="Cursos de Formacion" roles="Administrador">
+      <siteMapNode url="~/CursosFormacion/wfConsultarDisponibilidadCursos.aspx" title="Disponibilidad de Cursos" description="Realizar Consulta de Cursos que esten en matricula para poder Ingresar Solicitudes" />
+    </siteMapNode>
+    <siteMapNode url="~/CentrosFormacion/Default.aspx" title="Centros de Formacion">
+      <siteMapNode url="~/CentrosFormacion/wfInformacionCentroFormacion.aspx" title="Información del Centro" description="Permite ingresar o actualizar información del Centro de Formación" />
+      <siteMapNode url="~/CentrosFormacion/wfParticipantesExoneradosDoctos.aspx" title="Participantes Exonerados de Documentos" description="Permite ingresar datos de Participantes sin documentos de identificación para su posterior evaluación" />
+      <siteMapNode url="~/CentrosFormacion/wfConsultarParticipantes.aspx" title="Consulta Participantes" description="Realizar Consulta de Participantes de Cursos" />
+      <siteMapNode url="~/CentrosFormacion/wfCalendarizacionCursos.aspx" title="Calendarización de Cursos" />
+      <siteMapNode url="~/CursosFormacion/wfSolicitudInscripcion.aspx" title="Gestión de Solicitudes" description="Procesamiento de las Solicitudes Ingresadas" />
+      <siteMapNode url="~/CentrosFormacion/wfEvaluarSolicitudes.aspx" title="Evaluación de Solicitudes" description="Revisión para inscripción o aprobación de las Solicitudes Ingresadas para un Centro de Formación" />
+      <siteMapNode url="~/CentrosFormacion/wfAsistenciaAccionFormativa.aspx" title="Asistencia Cursos" description="Permite Ingresar la Asistencia a los Cursos en Ejecucion" />
+      <siteMapNode url="~/CentrosFormacion/wfEvaluacionesAccionFormativa.aspx" title="Notas Cursos" description="Permite Ingresar Evaluaciones/Notas a los Cursos en Ejecucion" />
+      <siteMapNode url="~/CentrosFormacion/wfReprogramacionCursos.aspx" title="Reprogramación de Cursos" description="Permite reprogramar los cursos que se encuentran en ejecución" />
+      <siteMapNode url="~/CentrosFormacion/wfInformeFinalAccionFormativa.aspx" title="Informe Ejecución" description="Permite Consultar/Modificar el Informe de Ejecución de los Cursos" />
+      <siteMapNode url="~/Reportes/wfReporteInformesCA.aspx" title="Reporte Informes Recibido" description="Informes recibidos en el Centro de Atención" />
+    </siteMapNode>    
+    <siteMapNode url="~/Consultas/Default.aspx" title="Consultas" description="Consultas del Sistema Relacionadas con el Programa de Formación">      
+      <siteMapNode url="~/Consultas/wfConsultarOfertaFormativa.aspx" title="Oferta Formativa" description="Consulta de la Oferta Formativa por Año" />
+      <siteMapNode url="~/Consultas/wfConsultarEjecucionOfertaFormativa.aspx" title="Ejecución de Programas" description="Consulta de la Ejecución de Programas de Capacitacion" />
+      <siteMapNode url="~/Consultas/wfReporteEjecucion.aspx" title="Reporte de Ejecución HTP" description="Reportes de la Ejecución del Programa Hábil Técnico Permanente" />
+      <siteMapNode url="~/Consultas/wfReporteUtilizacionRecursos.aspx" title="Reporte de Util. Recursos" description="Reportes de la utilización de Recursos del Programa Hábil Técnico Permanente" />
+      <siteMapNode url="~/Consultas/wfReporteEjecucionDE.aspx" title="Reporte de Ejecución DE" description="Reportes de la Ejecución de Programas" />
+      <siteMapNode url="~/Consultas/wfReporteResumenEjecucion.aspx" title="Reporte de Resumen de Ejecución" description="Reporte de Resumen de la Ejecución de los Proveedores" />
+      <siteMapNode url="~/Consultas/wfConsultarEjecucionCursosPATI.aspx" title="Reporte de Ejecución PATI" description="Reportes de la Ejecución del PATI" />
+      <siteMapNode url="~/Reportes/wfReporteParticipantesSolicitados.aspx" title="Reporte de Inscritos PATI" description="Reportes de Inscritos PATI" />
+    </siteMapNode>   
+    <siteMapNode url="~/GFI/Default.aspx" title="Formación Inicial" description="Operaciones para personal de la Gerencia de Formación Inicial">
+      <siteMapNode url="~/GFI/wfMantCONTRATO_COMPRA.aspx" title="Oferta de Compra Bolpros/Licitación" description="Mantenimiento para el registro de Ofertas de compra de Bolpros y Licitación " />
+      <siteMapNode url="~/GFI/wfMantASISTENCIA_PAGO.aspx" title="Parametrización de porcentajes de asistencia" description="Mantenimiento para el registro de Pago por asistencia " />
+      <siteMapNode url="~/GFI/wfCorreccionDatosParticipante.aspx" title="Corrección datos de Participantes" description="Corrección de nombres y apellidos de participantes del catálogo" />
+      <siteMapNode url="~/GFI/wfPaqueteInformeFinal.aspx" title="Paquetes Informes" description="Permite crear paquetes que agrupan una cantidad de Informes Finales" />      
+      <siteMapNode url="~/GFI/wfConsultaEjecucionOferta.aspx" title="Reportes" description="Reportes sobre la ejecuciÃ³n de la Oferta Formativa" />
+      <siteMapNode url="~/GFI/wfMantACCION_PROGRA_RETRO.aspx" title="Aplicación de Autorizaciones por Curso" description="Aplicación de Autorizaciones por Curso" />
+      <siteMapNode url="~/Mantenimientos/wfMantPROGRAMA_FORMACION.aspx" title="Asignación de monto de apoyo por participante" description="Permite modificar el monto de apoyo en el HTP" />      
+    </siteMapNode>
+    <siteMapNode url="~/PagoAccionesFormativas/Default.aspx" title="Pago de Acciones Formativas">
+      <siteMapNode url="~/PagoAccionesFormativas/wfRecepcionAccionesFormativas.aspx" title="Recepción de Cursos PATI" description="Permite la Recepción de Acciones Formativas del Programa PATI para Proceso de Pago" />
+      <siteMapNode url="~/PagoAccionesFormativas/wfFacturaAccionFormativa.aspx" title="Factura Cursos" description="Permite Registrar Facturas para Pago de Acciones Formativas"  />
+    </siteMapNode>
+    <siteMapNode url="~/LiquidacionPATI/Default.aspx" title="Liquidación PATI">
+      <siteMapNode url="~/LiquidacionPATI/wfConvocatoriasMunicipioPATI.aspx" title="Administración de Convocatorias PATI" description="Permite la Recepción de Acciones Formativas del Programa PATI para Proceso de Pago" />
+      <siteMapNode url="~/LiquidacionPATI/wfDesembolsosPATI.aspx" title="Desembolsos" description="Permite la Aplicación de Desembolsos para Solicitudes de Pago del Programa PATI" />
+    </siteMapNode>
+    <siteMapNode url="~/PEcentro/Default.aspx" title="Programa Empresa Centro">
+      <siteMapNode url="~/PEcentro/wfMantACCION_CONTRATADA.aspx" title="Carreras adjudicadas" description="Carreras Adjudicadas en el Programa Empresa Centro" />
+      <siteMapNode url="~/PEcentro/wfMantGRUPO_SELECCION.aspx" title="Grupos por carrera" description="Grupos habilitados por carrera en el Programa Empresa Centro" />
+      <siteMapNode url="~/PEcentro/wfMantSOLICITUD_PRESELECCION_EC.aspx" title="Aspirantes" description="Aspirantes del programa" />
+      <siteMapNode url="~/PEcentro/wfInformePreseleccion.aspx" title="Informe de Preseleccion" description="Informe de Preseleccion" />
+      <siteMapNode url="~/PEcentro/wfCalendarizarGrupo.aspx" title="Calendarizar grupos" description="Calendarizar grupos" />
+      <siteMapNode url="~/PEcentro/wfVisitaSeguimiento.aspx" title="Visitas de seguimiento" description="Visitas de seguimiento" />
+    </siteMapNode>
+    <siteMapNode url="~/Documentos/Default.aspx" title="Documentos">
+      <siteMapNode url="~/Documentos/ManualUsuarioHTP2.pdf" title="Manual de Usuario Hábil Técnico Permanente" description="Manual de Usuario para el Sistema de Gestión y Administración de la Formación Profesional" />
+      <siteMapNode url="~/Documentos/FichaInscripcionHTP.pdf" title="Ficha HTP" description="Solicitud de Inscripción del Programa Hábil Técnico Permanente" />
+      <siteMapNode url="~/Documentos/GuiaInscripcionParticipantesHTP.pdf" title="Guía de Inscripción" description="Guía de Inscripción de Participantes del Programa Hábil Técnico Permanente" />
+      <siteMapNode url="~/Documentos/ManualUsuarioPATI.pdf" title="Manual de Usuario Ejecución de Cursos Programa PATI" description="Manual de Usuario para ingresar la Ejecución de Cursos del Programa PATI" />      
+      <siteMapNode url="~/Documentos/FichaDncPATI.pdf" title="Ficha PATI" description="Diagnóstico de Necesidades de Capacitación del Programa PATI" />
+      <siteMapNode url="~/Documentos/ManualProcesoLiquidacionPATI.pdf" title="Manual Liquidacion PATI" description="Manual Liquidacion PATI" />
+      <siteMapNode url="~/Documentos/ManualUsuarioProveedorPROYECTOESPECIAL.pdf" title="Manual Proyectos Especiales" description="Manual de Usuario para ingresar la Ejecución de Cursos de Proyectos Especiales" />
+    </siteMapNode>
+    <siteMapNode url="~/Mapas/Default.aspx" title="Mapas">
+      <siteMapNode url="~/Mapas/wfMapa.aspx" title="Mapa SGAFP" description="Mapas de Consulta de HTP, PATI, ISSS" />
+    </siteMapNode>  
+    <siteMapNode url="~/Usuarios/Default.aspx" title="Seguridad" description="Operaciones relacionadas a la Seguridad">
+      <siteMapNode url="~/Usuarios/wfGestionSistemas.aspx" title="Gestión de Sistemas" description="Permite gestionar los Sistemas" />
+      <siteMapNode url="~/Usuarios/wfGestionRoles.aspx" title="Gestión de Roles" description="Permite gestionar los Roles del sistema" />
+      <siteMapNode url="~/Usuarios/wfGestionUsuarios.aspx" title="Gestión de Usuarios" description="Permite gestionar los usuarios creados en el sistema" />
+      <siteMapNode url="~/Usuarios/wfGestionOpciones.aspx" title="Gestión de Opciones" description="Permite gestionar las opciones de menu del sistema" />
+      <siteMapNode url="~/Usuarios/wfGestionOpcionesPorRol.aspx" title="Gestión de Opciones por Rol" description="Permite gestionar las opciones de menu del sistema asignadas por Rol de Usuario" />
+      <siteMapNode url="~/Usuarios/wfCambioClave.aspx" title="Cambiar mi Contraseña" description="Cambie su Contraseña de usuario" />
+    </siteMapNode>
+  </siteMapNode>
+  
+
+</siteMap>

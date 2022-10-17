@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0BAFF17-2335-4A51-8CC8-9D784F85C3D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.WinUC</RootNamespace>
+    <AssemblyName>SGAFP_WinUC</AssemblyName>
+    <MyType>Windows</MyType>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/SGAFP_WinUC/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_WinUC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_WebUC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SIFP_BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_DL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\MembershipProvider\DLLs\SIFP_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="SGAFP.BL" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cbxACCION_CONTRATADA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxACCION_FORMATIVA_DETALLE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxAREA_FORMACION.Partial.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxBase.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxBaseDesign.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="cbxCENTRO_RESPONSABILIDAD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCENTRO_RESPONSABILIDAD_UNIDAD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCONTRATO_BOLPROS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCONTRATO_PROVEEDOR_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxESTADO_CIVIL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxFUENTE_FINANCIAMIENTO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxGRUPO_ACCION_CONTRATADA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxGRUPO_SOLICITUD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPAIS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPARTICIPANTE_EXONERADO_DOC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROGRAMAS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROGRAMA_FORMACION_TIPOPAGO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROYECTO_FORMACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxREFERENTE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSIPU_CAPACITACIONES.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSIPU_DETALLECAPACITACIONES.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSIPU_GENERACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSIPU_MUNICIPIO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSIPU_TIPOCAPACITACIONES.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSOLICITUD_CAPACITACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxTERMINO_REFERENCIA_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxTIPO_ADJUDICACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxTIPO_CONTRATACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxUSUARIO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxUNIDAD_ORGANIZATIVA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxTIPO_SOLICITUD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxTIPO_PERSONA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSUPERVISION_AF_DET.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSUPERVISION_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSOLICITUD_INSCRIPCION_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSOLIC_EMPLEO_ANTERIOR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSOLIC_EMPLEO_ACTUAL.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSOLIC_CURSOS_RECIBIDOS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxSITIO_CAPACITACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxREGION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROVEEDOR_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROGRAMA_FORMACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPROCESO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPARTICIPANTE_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxPARTICIPANTE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxOPCION_MENU.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxOPCION_GRUPO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxOFERTA_FORMATIVA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxNIVEL_ACADEMICO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxMUNICIPIO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxMODALIDAD_DE_FORMACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxMETODO_EVALUACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxLISTA_SUPERVISION_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxINFORME_FINAL_DET.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxINFORME_FINAL_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxHALLAZGO_SUPERVISION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxGRUPO_USUARIO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxFACILITADOR_CAPACITADOR.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxEVALUACIONES_AF_DET.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxEVALUACION_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxETAPA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxESTADO_SOLICITUD.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxESTADO_ACCION_FORMATIVA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxEMPRESAS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxEJERCICIO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxDEPARTAMENTO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCURSO_TEMA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCONTROL_DOCUMENTOS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCIUU.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCIUO.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCATCURSO_2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxASISTENCIA_AF_DET.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxASISTENCIA_AF.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxAREA_SUPERVISION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxACCION_FORMATIVA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxAREA_FORMACION.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cbxCONTRATO_COMPRA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="frmFind.designer.vb">
+      <DependentUpon>frmFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="genToolBar.designer.vb">
+      <DependentUpon>genToolBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="genToolBar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_BL\SGAFP_BL.vbproj">
+      <Project>{BCF1CEF8-83B8-4010-9405-A3EA043B8E9C}</Project>
+      <Name>SGAFP_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmFind.resx">
+      <DependentUpon>frmFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>PublicVbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

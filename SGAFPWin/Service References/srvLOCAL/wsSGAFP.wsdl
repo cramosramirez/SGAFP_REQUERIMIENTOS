@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://192.168.70.4/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://192.168.70.4/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://192.168.70.4/">
+      <s:element name="ProcesarAsignacionGanador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigoArea" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoPrograma" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombrePrograma" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="duracionHoras" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="nombreProveedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nitProveedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codigoMunicipio" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="tipoPersona" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="noDui" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="noNrc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroParticipantes" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="tdr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="montoAdjudicado" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="correlativoGrupo" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarAsignacionGanadorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarAsignacionGanadorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarCreacionOrdenCompra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tdr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nitProveedor" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="resolucion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarCreacionOrdenCompraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarCreacionOrdenCompraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarQuedanFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idFacturaAF" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="numeroQuedan" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarQuedanFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarQuedanFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarChequeFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idFacturaAF" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroCheque" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="fechaEmision" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarChequeFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcesarChequeFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcesarAsignacionGanadorSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarAsignacionGanador" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarAsignacionGanadorSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarAsignacionGanadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarCreacionOrdenCompraSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarCreacionOrdenCompra" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarCreacionOrdenCompraSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarCreacionOrdenCompraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarQuedanFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarQuedanFactura" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarQuedanFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarQuedanFacturaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarChequeFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarChequeFactura" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarChequeFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarChequeFacturaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsSGAFPSoap">
+    <wsdl:operation name="ProcesarAsignacionGanador">
+      <wsdl:input message="tns:ProcesarAsignacionGanadorSoapIn" />
+      <wsdl:output message="tns:ProcesarAsignacionGanadorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarCreacionOrdenCompra">
+      <wsdl:input message="tns:ProcesarCreacionOrdenCompraSoapIn" />
+      <wsdl:output message="tns:ProcesarCreacionOrdenCompraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarQuedanFactura">
+      <wsdl:input message="tns:ProcesarQuedanFacturaSoapIn" />
+      <wsdl:output message="tns:ProcesarQuedanFacturaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarChequeFactura">
+      <wsdl:input message="tns:ProcesarChequeFacturaSoapIn" />
+      <wsdl:output message="tns:ProcesarChequeFacturaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsSGAFPSoap" type="tns:wsSGAFPSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcesarAsignacionGanador">
+      <soap:operation soapAction="http://192.168.70.4/ProcesarAsignacionGanador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarCreacionOrdenCompra">
+      <soap:operation soapAction="http://192.168.70.4/ProcesarCreacionOrdenCompra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarQuedanFactura">
+      <soap:operation soapAction="http://192.168.70.4/ProcesarQuedanFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarChequeFactura">
+      <soap:operation soapAction="http://192.168.70.4/ProcesarChequeFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsSGAFPSoap12" type="tns:wsSGAFPSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcesarAsignacionGanador">
+      <soap12:operation soapAction="http://192.168.70.4/ProcesarAsignacionGanador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarCreacionOrdenCompra">
+      <soap12:operation soapAction="http://192.168.70.4/ProcesarCreacionOrdenCompra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarQuedanFactura">
+      <soap12:operation soapAction="http://192.168.70.4/ProcesarQuedanFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarChequeFactura">
+      <soap12:operation soapAction="http://192.168.70.4/ProcesarChequeFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsSGAFP">
+    <wsdl:port name="wsSGAFPSoap" binding="tns:wsSGAFPSoap">
+      <soap:address location="http://localhost:65146/SGAFP/wsSGAFP.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsSGAFPSoap12" binding="tns:wsSGAFPSoap12">
+      <soap12:address location="http://localhost:65146/SGAFP/wsSGAFP.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

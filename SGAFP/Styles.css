@@ -1,0 +1,313 @@
+﻿body {margin: 0;padding-bottom: 2em;background-color: #FFFFFF;color: #000000;font-family: Verdana, Arial, Helvetica, sans-serif;border-top: 2px solid #140AD3;}
+#wrapper {width:100%;height:100%;}
+#header {height: 76px;}
+#header .title {font: 190% Arial, Helvetica, Georgia, "Times New Roman" , Times, serif;color: black;background-color: transparent; float: left;margin-right: 2em;margin-top: 0.3em;margin-left: .8em;}
+#header .breadcrumb {font: 90% Arial, Helvetica, Georgia, "Times New Roman" , Times, serif; color: black;background-color: transparent;float: right;margin-right: 2em;margin-top: 0.8em;    font-weight: bold;}
+#header a:link, a:visited {color: #140AD3;}
+#navigation {width: 20%;top: 7.4em;left: 0.4em;width: 13.2em;position: absolute;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 90%;}
+#navigation ul {list-style: none;margin: 0;padding: 0;}
+#navigation li {border-bottom: 1px solid #9DA5FD;}
+#navigation li a {display: block;padding: 5px 5px 5px 0.5em;border-left: 12px solid #07033A;border-right: 1px solid #07033A;background-color: #140AD3;color: #FFFFFF;text-decoration: none;}
+#navigation li a:hover {background-color: #07033A;color: #FFFFFF;}
+#navigation ul ul {margin-left: 12px;}
+#navigation ul ul li {border-bottom: 1px solid #07033A;margin: 0;background-color: #9DA5FD;color: #07033A;}
+#navigation ul ul a:link, #navigation ul ul a:visited {background-color: #9DA5FD;color: #07033A;}
+#navigation ul ul a:hover {background-color: #07033A;color: #FFFFFF;}
+#content {margin-top: 1em;margin-left: 16em;margin-right: 2em;top: 91px;left: 4px;width: 10px;height: 10px;position: absolute;overflow:auto;}
+h1 {font: 150% Arial, Helvetica, Georgia, "Times New Roman" , Times, serif;}
+#content p {font-size: 80%;line-height: 1.6em;}
+#content ul {font-size: 80%;line-height: 1.6em;}
+.TextBoxStyle {font-size: "11px";}
+.DataWebControlStyle {font-size: 70%;margin-right: 0px;text-align: left;}
+.HeaderStyle {background-color: #96BBE9;color: White;font-weight: bold;}
+.AlternatingRowStyle {background-color: #FFB56A;}
+.RowStyle {}
+.SelectedRowStyle {background-color: Yellow;}
+.ExpensivePriceEmphasis {font-weight: bold;font-style: italic;}
+.LowUnitsInStockEmphasis {color: Red;}
+.AffordablePriceEmphasis {background-color: Yellow;}
+.FooterStyle {}
+.Warning {color: Red;font-style: italic;font-weight: bold;font-size: x-large;}
+.RepeaterStyle {background-color: #a33;color: White;text-align: right;}
+.DataWebFormStyle {font-size: 80%;margin-right: 0px;}
+.SiteMapFormStyle {font-size: 80%;margin-right: 0px;}
+/* Formatos para tablas de Datos */
+table.helpT
+{text-align: center;font-family: Verdana;font-weight: normal;font-size: 11px;color: #404040;width: 500px;background-color: #fafafa;border: 1px #6699CC solid;border-collapse: collapse;border-spacing: 0px; }
+td.helpHed
+{border-bottom: 2px solid #6699CC;border-left: 1px solid #6699CC;background-color: #BEC8D1;text-align: left;text-indent: 5px;font-family: Verdana;font-weight: bold;font-size: 11px;color: #404040; }
+td.helpBod
+{border-bottom: 1px solid #9CF;border-top: 0px;border-left: 1px solid #9CF;border-right: 0px;text-align: left;text-indent: 10px;font-family: Verdana, sans-serif, Arial;font-weight: normal;font-size: 11px;color: #404040;background-color: #fafafa; }
+table.sofT
+{text-align: center;font-family: Verdana;font-weight: normal;font-size: 11px;color: #404040;width: 580px;background-color: #fafafa;border: 1px #6699CC solid;border-collapse: collapse;border-spacing: 0px; } 
+table.stats
+{border-style: none;border-color: inherit;border-width: 0px;text-align: center;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-weight: normal;font-size: 11px;color: #000000;width: 680px;background-color: #FFCC66;border-collapse: collapse;border-spacing: 0px;height: 149px;}
+table.stats td
+{background-color: #FFCC66;color: #000;padding: 4px;text-align: left;border: 1px #fff solid;}
+table.stats td.hed
+{background-color: #FFCC66;color: #fff;padding: 4px;text-align: left;border-bottom: 2px #fff solid;font-size: 12px;font-weight: bold;} 
+table.insa
+{border-style: none;border-color: inherit;border-width: 0px;text-align: center;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-weight: normal;font-size: 11px;color: #000000;background-color: #6699FF;border-collapse: collapse;border-spacing: 0px;}
+table.insa td
+{background-color: #D7E3FF;color: #000;padding: 4px;text-align: left;border: 1px #fff solid;}
+table.insa td.hed
+{background-color: #6699FF;color: #fff;padding: 4px;text-align: left;border-bottom: 2px #fff solid;font-size: 11px;font-weight: bold;}
+.TituloPagina
+{font: large Arial, Helvetica, Georgia, 'Times New Roman' , Times, serif;color: #0000FF;background-color: transparent;float: left;margin-right: 2em;margin-top: 0.3em;margin-left: .8em;text-decoration: overline;}
+.modalBackground 
+{background-color:Gray;filter:alpha(opacity=70);opacity:0.7;}
+.modalPopup 
+{background-color:#ffffdd;border-width:3px;border-style:solid;border-color:Gray;padding:3px;width:450px;}
+.modalPopup p {padding: 5px;}
+.progreso {display: block;position: absolute;padding: 2px 3px;}
+.contenedorProgreso {
+    width: 120px;position: absolute;top:8px;
+    left: 504px;
+    height: 70px;
+    background-color:#ffffff;  
+    text-align:center;
+    vertical-align:middle;  
+}
+.encabezadoProgreso {background: url(images/sprite.png) repeat-x 0px 0px; border-color: #808080 #808080 #ccc;border-style: solid;border-width: 0px 1px 1px;padding: 0px 10px;color: #000000;font-size: 9pt;font-weight: bold;line-height: 1.9;    font-family: arial,helvetica,clean,sans-serif;}
+.cuerpoProgreso {background-color: #f2f2f2;border-color: #808080;border-style: solid;border-width: 0px 1px;padding: 10px;}
+.TabArea {padding: 5px;background-color: White;border-left: 1px solid black;border-bottom: 1px solid black;border-right: 1px solid black;border-top: 1px solid black;z-index: -25;}
+.TabSeleccionado {background-color: #507CD1;border-color: #000000;border-left: 0px;border-right: 0px;border-top: 0px;border-style: solid solid none solid;border-width: 1px;}
+.calendario .ajax__calendar_container {border:0px;background-color: #ffffcc; color: black;}
+.calendario .ajax__calendar_other .ajax__calendar_day,
+.calendario .ajax__calendar_other .ajax__calendar_year {color: black;}
+.calendario .ajax__calendar_hover .ajax__calendar_day,
+.calendario .ajax__calendar_hover .ajax__calendar_month,
+.calendario .ajax__calendar_hover .ajax__calendar_year {color: black;}
+.calendario .ajax__calendar_active .ajax__calendar_day,
+.calendario .ajax__calendar_active .ajax__calendar_month,
+.calendario .ajax__calendar_active .ajax__calendar_year {color: black;font-weight:bold;}
+.insa .calendario .ajax__calendar_container {padding:0px;position:absolute;cursor:default;width:225px;font-size:11px;text-align:center;font-family:tahoma,verdana,helvetica;}
+.insa .calendario .ajax__calendar_body {height:139px;width:225px;position:relative;overflow:hidden;margin:auto; background-color:#ffffcc;}
+.insa .calendario .ajax__calendar_dayname
+{
+    font: 9px Tahoma, Arial;
+    font-weight:bold;
+    background-color: #ffffcc;
+}
+.insa .calendario .ajax__calendar_day,
+.insa .calendario .ajax__calendar_month,
+.insa .calendario .ajax__calendar_year,
+.insa .calendario .ajax__calendar_days,
+.insa .calendario .ajax__header {
+    color: black;
+    font: 10px Tahoma, Arial;
+    background-color: #ffffcc;
+}
+.insa .calendario .ajax__tab_body 
+{
+    font-family:verdana,tahoma,helvetica;
+    font-size:10pt;
+    border:0px solid #000000;
+    border-top:0;
+    padding:0px;
+    background-color:#cccccc;
+}
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+.accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/* Estilo de los títulos de los módulos */
+.Encabezado   {
+	font-family: "Arial", sans-serif;
+    font-size:  20px;
+    font-weight:    normal;
+    color: #003366;
+}
+
+/* style of item titles on edit and admin pages */
+.SubEncabezado    {
+	font-family: "Arial", sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: #003366;
+}
+
+.EncabezadoContenido    {
+	font-family: "Arial", sans-serif;
+    font-size:  20px;
+    font-weight:    bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: darkblue ;
+}
+
+.SubSubEncabezado {
+	font-family: "Arial", sans-serif;
+    font-size:  11px;
+    font-weight:    bold;
+    color: black;
+}
+.SubEncabezadoContenido
+{
+    background-color: Silver;
+    color: #003366;
+	font-family: "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: Normal;
+    height: 20px
+}
+
+.EncabezadoSecciones
+{
+	padding-right: 8px;
+	padding-left: 8px;
+	font-weight: bold;
+	font-size: 20px;
+	background: #ffffff;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	color: #77797d;
+	padding-top: 5px;
+	font-family: "Agency FB";
+    letter-spacing:1px;
+}
+
+.TextToolbarButton
+{
+	font-weight: bold;
+	color: #FFFF00;
+	font-size: small;
+	font-family: 'Times New Roman' , Times, serif;
+	vertical-align: middle;
+}
+
+.Normal
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.NormalUPPER
+{
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.NormalItalic
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: normal;
+    font-style:italic;
+    line-height: 16px    
+}
+
+.BoldItalic
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    font-style:italic;
+    line-height: 16px    
+}
+
+.NormalTextBox {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;}
+.NormalRed {font-weight: bold;font-size: 11px;color: red;font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;background-color: transparent;}
+.NormalBold {font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;font-size: 11px;font-weight: bold}
+.TituloControl
+{
+    vertical-align: top;
+}
+.div_footer
+{
+	margin: 3px;
+	font-size: 12px;
+    font-weight:bold; 
+	color: #3b3b3b;
+	padding: 2px;
+	background: -moz-linear-gradient(
+    top,
+    #F9F9F9 0%,
+    #E8E8E8);
+	background: -webkit-gradient(
+    linear, left top, left bottom, 
+    from(#FFFFFF),
+    to(#F0F0FF));
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 1px solid #999999;
+	-moz-box-shadow: 0px 1px 2px rgba(000,000,000,0.5), inset 0px 1px 0px rgba(255,255,255,1);
+	-webkit-box-shadow: 0px 1px 2px rgba(000,000,000,0.5), inset 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: 0px 1px 2px rgba(000,000,000,0.5), inset 0px 1px 0px rgba(255,255,255,1);	
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;        
+}
+
+@font-face {
+    font-family:Monserrat;
+    font-style:normal;
+    font-weight:normal;   
+    src: url(Montserrat_Regular.ttf); 
+}
+
+.letraMonserrat {
+    font-family:Monserrat;
+    font-size:30px;     
+}

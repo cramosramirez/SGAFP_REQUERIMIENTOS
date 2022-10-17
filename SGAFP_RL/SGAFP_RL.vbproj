@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F42A618-B3A4-4B5E-B15F-BA919191542E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SGAFP.RL</RootNamespace>
+    <AssemblyName>SGAFP_RL</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SGAFP_RL.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SGAFP_RL.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Reports.v11.1.Designer, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1.Extensions, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v11.1, Version=11.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="SIFP_BL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\SIFP\DLLs\SIFP_BL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_DL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\SIFP\DLLs\SIFP_DL.dll</HintPath>
+    </Reference>
+    <Reference Include="SIFP_EL, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\192.168.1.159\gti\Desarrollo\SIFP\DLLs\SIFP_EL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="SGAFP.BL" />
+    <Import Include="SGAFP.EL" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="xrInformeEjecucionEC.designer.vb">
+      <DependentUpon>xrInformeEjecucionEC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeEjecucionEC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeAvanceEC.designer.vb">
+      <DependentUpon>xrInformeAvanceEC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeAvanceEC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrParticipantesInscritosEC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeAvanceAspirantesEC.Designer.vb">
+      <DependentUpon>xrInformeAvanceAspirantesEC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeAvanceAspirantesEC.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformesRecibidosCA.Designer.vb">
+      <DependentUpon>xrInformesRecibidosCA.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformesRecibidosCA.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DE\xrInformeEjecucionDE.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DE\xrInformeEjecucionDE_SubReporteDomicilio.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DE\xrInformeEjecucionDE_SubReporteGenero.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFI\xrResumenEjecucion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFI\xrResumenEjecucion_SubReporteMontosPastel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GFI\xrResumenEjecucion_SubReporteMontosPorProveedor.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeAdjudicadoEjecutado.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteCursosPorAreas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteDepartamentoResidencia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteEjecucion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteExpectativasFormacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteNivelEscolaridad.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteRangoEdades.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeEjecucion_SubReporteSituacionLaboral.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeUtilRecursos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeUtilRecursos_SubReporteAreasFormacion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeUtilRecursos_SubReporteCursos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proveedores\xrInformeUtilRecursos_SubReporteGantt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF5.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeFinalAnexo1.Designer.vb">
+      <DependentUpon>xrInformeFinalAnexo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeFinalAnexo1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeProyEspecialAnexo1.designer.vb">
+      <DependentUpon>xrInformeProyEspecialAnexo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeProyEspecialAnexo1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeProyEspecialAnexo2.designer.vb">
+      <DependentUpon>xrInformeProyEspecialAnexo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeProyEspecialAnexo2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeProyEspecialAnexo3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrParticipantesSolicitudInscritosPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF3A.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF4A.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF5-PATI-USAID.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF5Cheques.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF5Revision.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrAnexoTAF9.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrCursosRecibidosParticipante.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrIFinalAnexoI-PATI.Designer.vb">
+      <DependentUpon>xrIFinalAnexoI-PATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrIFinalAnexoI-PATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrIFinalAnexoII-PATI.Designer.vb">
+      <DependentUpon>xrIFinalAnexoII-PATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrIFinalAnexoII-PATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrIFinalAnexoIII_PATI.Designer.vb">
+      <DependentUpon>xrIFinalAnexoIII_PATI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrIFinalAnexoIII_PATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeFinalAnexo1A.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrInformeFinalAnexo2.Designer.vb">
+      <DependentUpon>xrInformeFinalAnexo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrInformeFinalAnexo2.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrListadoAsistencia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrListadoAsistenciaPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrListadoAsistenciaReal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrListadoAsistenciaRealPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrPaquetesInformes.Designer.vb">
+      <DependentUpon>xrPaquetesInformes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrPaquetesInformes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrParticipantesInscritos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrFormularioF8.Designer.vb">
+      <DependentUpon>xrFormularioF8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrFormularioF8.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrParticipantesInscritosPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSolicitudInscripcion.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteCursosRecibidosSolic.Designer.vb">
+      <DependentUpon>xrSubReporteCursosRecibidosSolic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="xrSubReporteCursosRecibidosSolic.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteCursosSolicitadosParticipante.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteListaAsistencia.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteListaAsistenciaPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteListaAsistenciaReal.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteListaAsistenciaRealPATI.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xrSubReporteProyEspecialAnexo3.vb">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="xrInformeEjecucionEC.resx">
+      <DependentUpon>xrInformeEjecucionEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeAvanceEC.resx">
+      <DependentUpon>xrInformeAvanceEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrParticipantesInscritosEC.resx">
+      <DependentUpon>xrParticipantesInscritosEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeAvanceAspirantesEC.resx">
+      <DependentUpon>xrInformeAvanceAspirantesEC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformesRecibidosCA.resx">
+      <DependentUpon>xrInformesRecibidosCA.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DE\xrInformeEjecucionDE.resx">
+      <DependentUpon>xrInformeEjecucionDE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DE\xrInformeEjecucionDE_SubReporteDomicilio.resx">
+      <DependentUpon>xrInformeEjecucionDE_SubReporteDomicilio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DE\xrInformeEjecucionDE_SubReporteGenero.resx">
+      <DependentUpon>xrInformeEjecucionDE_SubReporteGenero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFI\xrResumenEjecucion.resx">
+      <DependentUpon>xrResumenEjecucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFI\xrResumenEjecucion_SubReporteMontosPastel.resx">
+      <DependentUpon>xrResumenEjecucion_SubReporteMontosPastel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GFI\xrResumenEjecucion_SubReporteMontosPorProveedor.resx">
+      <DependentUpon>xrResumenEjecucion_SubReporteMontosPorProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeAdjudicadoEjecutado.resx">
+      <DependentUpon>xrInformeAdjudicadoEjecutado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion.resx">
+      <DependentUpon>xrInformeEjecucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteCursosPorAreas.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteCursosPorAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteDepartamentoResidencia.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteDepartamentoResidencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteEjecucion.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteEjecucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteExpectativasFormacion.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteExpectativasFormacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteNivelEscolaridad.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteNivelEscolaridad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteRangoEdades.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteRangoEdades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeEjecucion_SubReporteSituacionLaboral.resx">
+      <DependentUpon>xrInformeEjecucion_SubReporteSituacionLaboral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeUtilRecursos.resx">
+      <DependentUpon>xrInformeUtilRecursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeUtilRecursos_SubReporteAreasFormacion.resx">
+      <DependentUpon>xrInformeUtilRecursos_SubReporteAreasFormacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeUtilRecursos_SubReporteCursos.resx">
+      <DependentUpon>xrInformeUtilRecursos_SubReporteCursos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores\xrInformeUtilRecursos_SubReporteGantt.resx">
+      <DependentUpon>xrInformeUtilRecursos_SubReporteGantt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF5.resx">
+      <DependentUpon>xrAnexoTAF5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeFinalAnexo1.resx">
+      <DependentUpon>xrInformeFinalAnexo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeProyEspecialAnexo1.resx">
+      <DependentUpon>xrInformeProyEspecialAnexo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeProyEspecialAnexo2.resx">
+      <DependentUpon>xrInformeProyEspecialAnexo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeProyEspecialAnexo3.resx">
+      <DependentUpon>xrInformeProyEspecialAnexo3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrParticipantesSolicitudInscritosPATI.resx">
+      <DependentUpon>xrParticipantesSolicitudInscritosPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF3A.resx">
+      <DependentUpon>xrAnexoTAF3A.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF4A.resx">
+      <DependentUpon>xrAnexoTAF4A.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF5-PATI-USAID.resx">
+      <DependentUpon>xrAnexoTAF5-PATI-USAID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF5Cheques.resx">
+      <DependentUpon>xrAnexoTAF5Cheques.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF5Revision.resx">
+      <DependentUpon>xrAnexoTAF5Revision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrAnexoTAF9.resx">
+      <DependentUpon>xrAnexoTAF9.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrCursosRecibidosParticipante.resx">
+      <DependentUpon>xrCursosRecibidosParticipante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrIFinalAnexoI-PATI.resx">
+      <DependentUpon>xrIFinalAnexoI-PATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrIFinalAnexoII-PATI.resx">
+      <DependentUpon>xrIFinalAnexoII-PATI.vb</DependentUpon>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrIFinalAnexoIII_PATI.resx">
+      <DependentUpon>xrIFinalAnexoIII_PATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeFinalAnexo1A.resx">
+      <DependentUpon>xrInformeFinalAnexo1A.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrInformeFinalAnexo2.resx">
+      <DependentUpon>xrInformeFinalAnexo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrListadoAsistencia.resx">
+      <DependentUpon>xrListadoAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrListadoAsistenciaPATI.resx">
+      <DependentUpon>xrListadoAsistenciaPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrListadoAsistenciaReal.resx">
+      <DependentUpon>xrListadoAsistenciaReal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrListadoAsistenciaRealPATI.resx">
+      <DependentUpon>xrListadoAsistenciaRealPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrPaquetesInformes.resx">
+      <DependentUpon>xrPaquetesInformes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrParticipantesInscritos.resx">
+      <DependentUpon>xrParticipantesInscritos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrFormularioF8.resx">
+      <DependentUpon>xrFormularioF8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrParticipantesInscritosPATI.resx">
+      <DependentUpon>xrParticipantesInscritosPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSolicitudInscripcion.resx">
+      <DependentUpon>xrSolicitudInscripcion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteCursosRecibidosSolic.resx">
+      <DependentUpon>xrSubReporteCursosRecibidosSolic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteCursosSolicitadosParticipante.resx">
+      <DependentUpon>xrSubReporteCursosSolicitadosParticipante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteListaAsistencia.resx">
+      <DependentUpon>xrSubReporteListaAsistencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteListaAsistenciaPATI.resx">
+      <DependentUpon>xrSubReporteListaAsistenciaPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteListaAsistenciaReal.resx">
+      <DependentUpon>xrSubReporteListaAsistenciaReal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteListaAsistenciaRealPATI.resx">
+      <DependentUpon>xrSubReporteListaAsistenciaRealPATI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xrSubReporteProyEspecialAnexo3.resx">
+      <DependentUpon>xrSubReporteProyEspecialAnexo3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SGAFP_BL\SGAFP_BL.vbproj">
+      <Project>{BCF1CEF8-83B8-4010-9405-A3EA043B8E9C}</Project>
+      <Name>SGAFP_BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_DL\SGAFP_DL.vbproj">
+      <Project>{42A91AA2-475A-4BBA-8A0A-B7F4CB17796F}</Project>
+      <Name>SGAFP_DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SGAFP_EL\SGAFP_EL.vbproj">
+      <Project>{810B5DF9-6F33-43C4-9ED8-29C0786BE11E}</Project>
+      <Name>SGAFP_EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoInsaforp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
